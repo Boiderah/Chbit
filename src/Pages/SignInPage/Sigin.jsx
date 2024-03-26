@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Signin.css";
 
 const Sigin = () => {
@@ -5,7 +6,7 @@ const Sigin = () => {
   return (
     <div className="container">
        <form className="form">
-      <div className="header">Sign In</div>
+      <div className="header">Sign in</div>
       <div className="inputs">
         <input placeholder="Email" className="input" type="text" />
         <input placeholder="Password" className="input" type="password" />
@@ -15,9 +16,12 @@ const Sigin = () => {
           </label>
           <label className="checkbox-text" htmlFor="checkbox">Remember me</label>
         </div>
-        <button className="sign-in-btn">Submit</button>
+        {/* <button className="sign-in-btn">Submit</button> */}
+        <button type="submit" className="form--submit">
+           Sign up
+       </button>
         <a className="forget" href="#">Forget password ?</a>
-        <p className="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        <p className="signup-link">Don't have an account? <Link to={'/signup'}>Sign up</Link></p>
       </div>
     </form>
     </div>

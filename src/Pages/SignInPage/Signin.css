@@ -13,12 +13,12 @@
 .header {
   position: relative;
   background-clip: border-box;
-  background-color: #1e88e5;
-  background-image: linear-gradient(to top right,#1e88e5,#42a5f5);
+  /* background-color: #1e88e5; */
+  /* background-image: linear-gradient(to top right,#1e88e5,#42a5f5); */
   margin: 10px;
   border-radius: 0.75rem;
   overflow: hidden;
-  color: #fff;
+  color: #639;
   box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
   height: 7rem;
   letter-spacing: 0;
@@ -49,7 +49,8 @@
 }
 
 .input {
-  border: 1px solid rgba(128, 128, 128, 0.61);
+  /* border: 1px solid rgba(128, 128, 128, 0.61); */
+  border: 1.5px dotted #639;
   outline: 0;
   color: rgb(69 90 100);
   font-weight: 400;
@@ -63,7 +64,9 @@
 }
 
 .input:focus {
-  border: 1px solid #1e88e5;
+  /* border: 1px solid #1e88e5; */
+  border: 1.5px dotted #639;
+
 }
 
 .checkbox-container {
@@ -95,8 +98,25 @@
 .checkbox-text {
   cursor: pointer;
 }
+.form--submit {
+  width: 50%;
+  padding: 0.625em;
+  border-radius: 5px;
+  color: white;
+  background-color: white;
+  border: 1px dashed #639;
+  cursor: pointer;
+}
 
-.sigin-btn {
+.form--submit:hover {
+  color: #639;
+  background-color: #639;
+  border: 1px dashed #639;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* .sigin-btn {
   text-transform: uppercase;
   font-weight: 700;
   font-size: .75rem;
@@ -110,7 +130,7 @@
   outline: 0;
   border: 0;
   color: #fff;
-}
+} */
 
 .signup-link {
   line-height: 1.5;
@@ -126,7 +146,7 @@
   font-weight: 700;
   font-size: .875rem;
   margin-left: .25rem;
-  color: #1e88e5;
+  color: #639;
 }
 
 .forget {

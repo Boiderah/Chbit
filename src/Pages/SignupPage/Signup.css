@@ -1,3 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:linear-gradient(to top right,white,rgb(181, 144, 218),rgb(43, 41, 41)) ;
+  height: 100vh;
+}
 .form {
     background-color: white;
     padding: 3.125em;
@@ -6,10 +17,12 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+    height: 80%;
   }
   
   .signup {
-    color: rgb(77, 75, 75);
+    /* color: rgb(77, 75, 75); */
+    color: #639;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
@@ -23,14 +36,14 @@
     margin-bottom: 1.25em;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid #639;
     padding: 0.8em;
     font-family: 'Inter', sans-serif;
     outline: none;
   }
   
   .form--input:focus {
-    border: 1px solid rgb(37, 19, 199);
+    border: 2px dotted #639;
     outline: none;
   }
   
@@ -56,15 +69,15 @@
     width: 50%;
     padding: 0.625em;
     border-radius: 5px;
-    color: white;
-    background-color: #639;
+    color: #639;
+    background-color: white;
     border: 1px dashed #639;
     cursor: pointer;
   }
   
   .form--submit:hover {
-    color: #639;
-    background-color: white;
+    color: white;
+    background-color: #639;
     border: 1px dashed #639;
     cursor: pointer;
     transition: 0.5s;
