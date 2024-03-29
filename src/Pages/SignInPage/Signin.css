@@ -9,26 +9,44 @@
   width: 22rem;
   background-clip: border-box;
 }
-
-.header {
-  position: relative;
-  background-clip: border-box;
-  /* background-color: #1e88e5; */
-  /* background-image: linear-gradient(to top right,#1e88e5,#42a5f5); */
-  margin: 10px;
-  border-radius: 0.75rem;
-  overflow: hidden;
+.brandname{
   color: #639;
-  box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
-  height: 7rem;
+  height: 5rem;
   letter-spacing: 0;
-  line-height: 1.375;
+  line-height: 1.275;
   font-weight: 600;
   font-size: 1.9rem;
   font-family: Roboto, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.wlcb{
+  color: #639;
+  height: 4rem;
+  letter-spacing: 0;
+  line-height: 1.275;
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.header {
+  background-clip: border-box;
+  border-radius: 0.75rem;
+  color: #639;
+  box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
+  /* height: 7rem; */
+  letter-spacing: 0;
+  line-height: 1.4rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: Roboto, sans-serif;
+
 }
 
 .inputs {
@@ -52,7 +70,7 @@
   /* border: 1px solid rgba(128, 128, 128, 0.61); */
   border: 1.5px dotted #639;
   outline: 0;
-  color: rgb(69 90 100);
+  color: whitesmoke;
   font-weight: 400;
   font-size: .9rem;
   line-height: 1.25rem;
@@ -85,8 +103,8 @@
   cursor: pointer;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.027);
-  height: 35px;
-  width: 35px;
+  height: 15px;
+  width: 15px;
 }
 
 .checkbox input {
@@ -116,22 +134,6 @@
   transition: 0.5s;
 }
 
-/* .sigin-btn {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .75rem;
-  line-height: 1rem;
-  text-align: center;
-  padding: .75rem 1.5rem;
-  background-color: #1e88e5;
-  background-image: linear-gradient(to top right,#1e88e5,#42a5f5);
-  border-radius: .5rem;
-  width: 100%;
-  outline: 0;
-  border: 0;
-  color: #fff;
-} */
-
 .signup-link {
   line-height: 1.5;
   font-weight: 300;
@@ -153,3 +155,18 @@
   text-align: right;
   font-weight: 600;
 }
+/* .sigin-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1rem;
+  text-align: center;
+  padding: .75rem 1.5rem;
+  background-color: #1e88e5;
+  background-image: linear-gradient(to top right,#1e88e5,#42a5f5);
+  border-radius: .5rem;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  color: #fff;
+} */

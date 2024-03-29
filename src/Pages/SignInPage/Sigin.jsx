@@ -6,7 +6,9 @@ const Sigin = () => {
   return (
     <div className="container">
        <form className="form">
-      <div className="header">Sign in</div>
+        <span className="brandname">Getbit</span>
+        <span className="wlcb">Welcome back</span>
+      <span className="header">Login</span>
       <div className="inputs">
         <input placeholder="Email" className="input" type="text" />
         <input placeholder="Password" className="input" type="password" />
@@ -18,7 +20,7 @@ const Sigin = () => {
         </div>
         {/* <button className="sign-in-btn">Submit</button> */}
         <button type="submit" className="form--submit">
-           Sign up
+           Login
        </button>
         <a className="forget" href="#">Forget password ?</a>
         <p className="signup-link">Don't have an account? <Link to={'/signup'}>Sign up</Link></p>
