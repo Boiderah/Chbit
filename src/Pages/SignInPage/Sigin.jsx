@@ -8,7 +8,7 @@ const Sigin = () => {
        <form className="form">
         <span className="brandname">Getbit</span>
         <span className="wlcb">Welcome back</span>
-      <span className="header">Login</span>
+      <span className="header">Login To Your Account</span>
       <div className="inputs">
         <input placeholder="Email" className="input" type="text" />
         <input placeholder="Password" className="input" type="password" />

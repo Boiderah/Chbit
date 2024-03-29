@@ -35,9 +35,10 @@ const Signup = () => {
         <div className="container">
        <form className="form" onSubmit={handleSubmit}>
         <span className="wlc">Welcome To Getbit</span>
-       <span className="signup">Sign Up</span>
-       <input type="email" placeholder="first Name" className="form--input" value={firstName} onChange={handleEmailChange} />
-       <input type="email" placeholder="last Name" className="form--input" value={lastName} onChange={handleEmailChange} />
+        <span className="wlcin">Let's Get Started</span>
+       <span className="signup">Sign Up!</span>
+       <input type="email" placeholder="Full Name" className="form--input" value={firstName} onChange={handleEmailChange} />
+       {/* <input type="email" placeholder="last Name" className="form--input" value={lastName} onChange={handleEmailChange} /> */}
        <input type="email" placeholder="Email address" className="form--input" value={email} onChange={handleEmailChange} />
        <input type="password" placeholder="Password" className="form--input" value={password} onChange={handlePasswordChange} />
        <input type="password" placeholder="Confirm password" className="form--input" value={confirmPassword} onChange={handleConfirmPasswordChange} />

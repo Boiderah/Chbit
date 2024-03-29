@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   background-color: #fff;
   color: rgb(97 97 97);
   box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
@@ -12,6 +12,7 @@
 .brandname{
   color: #639;
   height: 5rem;
+  margin-top: -5vh;
   letter-spacing: 0;
   line-height: 1.275;
   font-weight: 600;
@@ -29,6 +30,7 @@
   font-weight: 600;
   font-size: 1.6rem;
   font-family: Roboto, sans-serif;
+  margin-bottom: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
