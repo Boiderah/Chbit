@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 100vh;
+}
+.form {
+    background-color: rgb(15, 15, 15);
+    padding:  3.125em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+    height: 60%;
+  }
+  .wlc{
+    color: #639;
+    height: 7rem;
+    letter-spacing: 0;
+    line-height: 1.375;
+    font-weight: 600;
+    font-size: 1.9rem;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+  }
+  .wlcin{
+    color: #639;
+    height: 4rem;
+    letter-spacing: 0;
+    line-height: 1.175;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+  }
+  
+  .signup {
+    color: #639;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+  }
+  
+  .form--input {
+    border: 1.5px dotted #639;
+    outline: none;
+  /* outline: 0; */
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: .9rem;
+  line-height: 1.25rem;
+  padding: 0.75rem;
+  background-color: transparent;
+  border-radius: .375rem;
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+    /* width: 100%;
+    height: 40px;
+    border: 1px solid #639;
+    padding: 0.8em;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(15, 15, 15); */
+    /* padding-bottom: 4vh; */
+  }
+  
+  .form--input:focus {
+    border: 2px dotted #639;
+    outline: none;
+  }
+  
+  .form--marketing {
+    display: flex;
+    margin-bottom: 1.25em;
+    align-items: center;
+  }
+  
+  .form--marketing > input {
+    margin-right: 0.625em;
+  }
+  
+  .form--marketing > label {
+    color: grey;
+  }
+  
+  .checkbox, input[type="checkbox"] {
+    accent-color: #639;
+  }
+  
+  .form--submit {
+    width: 50%;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: #639;
+    background-color: rgb(12, 12, 12);
+    border: 1px dashed #639;
+    cursor: pointer;
+  }
+  
+  .form--submit:hover {
+    color: white;
+    background-color: #639;
+    border: 1px dashed #639;
+    cursor: pointer;
+    transition: 0.5s;
+  }
