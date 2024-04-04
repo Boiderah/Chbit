@@ -1,9 +1,14 @@
 const express = require('express');
 const cors = require('cors');
-
+const connectdb = require("./db");
+const dotenv = require('dotenv');
 const app = express();
 const port = 4000;
+const User = require("./models/userModel");
 
+
+dotenv.config()
+connectdb();
 const user = [
     {
         email: 'gabby@gmail.',
