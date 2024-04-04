@@ -11,7 +11,7 @@ const Buy = () => {
         <input placeholder="" className="input" type="text" />
         <input placeholder="" className="input" type="text" />
         <input placeholder="" className="input" type="text" />
-
+        
         </form>
     </div>
   )

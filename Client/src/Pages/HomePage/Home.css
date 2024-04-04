@@ -8,13 +8,49 @@
   #home .contain{
     color: #639;
     height: 5rem;
-    margin-top: -5vh;
+    margin-top: -4vh;
+    /* margin-bottom: 1vh; */
     letter-spacing: 0;
-    line-height: 1.275;
-    font-weight: 600;
-    font-size: 1.9rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     font-family: Roboto, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid black;
+  }
+  #home .profile{
+    color: #639;
+    height: 5vh;
+    margin-bottom: 5vh;
+    letter-spacing: 0;
+    line-height: 1.275;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    border: 1px solid black;
+  }
+  #home #contentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+  }
+  
+  #home .prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: #639;
+    border: 1px solid black;
+  }
+  #home #bandS{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3px;
   }

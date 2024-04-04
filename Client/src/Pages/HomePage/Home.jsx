@@ -2,18 +2,27 @@ import React from 'react'
 import "./Home.css"
 
 const Home = () => {
+
   return (
     <div id="home">
       <div className="contain">
         <h1>Getbit</h1>
-        <div className="prod">
-          <div id="b&S">
-            <h1>Buy</h1>
-            <h1>/Sell</h1>
-          </div>
-          <div id="trns">Order</div>
-        </div>
       </div>
+      <div className="profile">
+        profile
+      </div>
+      <div id="contentbox">
+        <div className="prod">
+          <div id="bandS">
+            <h3>Buy</h3>
+            <h3>/</h3>
+            <h3>Sell</h3>
+          </div>
+          <div id="trns">
+            <h3>Order</h3>
+            </div>
+        </div>
+        </div>
 
     </div>
   )
