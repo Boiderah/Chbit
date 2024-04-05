@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signin.css";
 import { useState } from "react";
 
 const Sigin = () => {
   const [ email, setEmail] = useState("")
   const [ Password, setPassword] = useState("")
+  const [ token, setToken] = useState("")
+  const Navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,8 +23,13 @@ const Sigin = () => {
       }),
     })
     .then(res => res.json())
-    .then(res => console.log(res))
+    .then((res) => {
+      localStorage.setItem("token", `${res[1]}`)
+      Navigate('/')
+    })
     .catch(err => console.error(err))
+
+    
     }
 
   return (

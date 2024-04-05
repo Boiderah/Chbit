@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Home.css"
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  const Navigate = useNavigate()
+  useEffect(()=>{
+    const token =localStorage.getItem('token');
+    if(!token){
+      Navigate('/signin')
+    }
+
+  },[])
+
+  
 
   return (
     <div id="home">

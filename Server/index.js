@@ -9,10 +9,10 @@ const User = require("./models/userModel");
 
 dotenv.config()
 connectdb();
-const user = [
+const users = [
     {
-        email: 'gabby@gmail.',
-        password: '<PASSWORD>',
+        email: 'gabby@gmail',
+        password: 'BENTEN',
         Name: 'musa james',
         country: 'USA',
         gender: 'trans',
@@ -20,14 +20,14 @@ const user = [
     },
     {
         email: 'gabby@gmail.',
-        password: '<PASSWORD>',
+        password: 'BENTEN',
         Name: 'musa james',
         country: 'USA',
         gender: 'trans',
 
     },
     {
-        email: 'gabby@gmail.',
+        email: 'gabby@gmail',
         password: '<PASSWORD>',
         Name: 'musa james',
         country: 'USA',
@@ -89,16 +89,19 @@ const countries = [
 ]
 app.use(
     cors({
-        origin: 'http://localhost:5173'
+        origin: ['http://localhost:5173', 'https://localhost:5176']
     })
 )
 
+app.use(express.json())
+
 app.post('/Login',(req, res) => {
     const { email, password } = req.body;
-    // console.log(req.body);
-    const user = user.find(u => u.email === email && u.password === password);
+    console.log(req.body);
+    const user = users.find(u => u.email == email && u.password == password);
+    console.log(user);
     if (user) {
-        res.send({token:udheuiiejs.token});
+        res.send([user, 'udheuiiejs.token']);
     } else {
         res.status(401).send('Invalid credentials');
     }
