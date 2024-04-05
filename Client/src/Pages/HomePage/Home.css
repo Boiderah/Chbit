@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   #home .profile{
     color: #639;
@@ -29,7 +29,7 @@
     font-size: 1.4rem;
     font-family: Roboto, sans-serif;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   #home #contentbox{
     display: flex;
@@ -46,7 +46,7 @@
     align-items: center;
     width: 90%;
     color: #639;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
   #home #bandS{
     display: flex;
