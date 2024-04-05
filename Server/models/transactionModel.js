@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
 
-const Sellerschema = mongoose.Schema({
+const transactionschema = mongoose.Schema({
     quantity: {
         type: String,
         required: true
     },
     coin: {
+        type: String,
+        required: true
+    },
+    rate: {
         type: String,
         required: true
     },
@@ -15,23 +19,23 @@ const Sellerschema = mongoose.Schema({
     },
     AccountNumber: {
         type: String,
-        required: false
+        required: true
     },
     AccountName: {
         type: String,
         required: true
     },
-    // AccountName: {
-    //     type: String,
-    //     required: true
-    // },
-    // AccountName: {
-    //     type: String,
-    //     required: true
-    // },
+    buyer: {
+        type: String,
+        required: true
+    },
+    Seller: {
+        type: String,
+        required: true
+    },
 
 });
 
-const User = mongoose.model("Seller", Sellerschema);
+const Seller = mongoose.model("Seller", transactionschema);
 
 module.exports = Seller;
