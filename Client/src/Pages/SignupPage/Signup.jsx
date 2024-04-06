@@ -25,11 +25,31 @@ const Signup = () => {
     setSubscribe(e.target.checked);
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here, you can access form data from email, password, confirmPassword, and subscribe states
-    console.log('Form submitted:', { email, password, confirmPassword, subscribe });
-  };
+    console.log(email, Password)
+
+    fetch("http://localhost:4000/Login",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        password: Password,
+        phoneNumber
+      }),
+    })
+    .then(res => res.json())
+    .then((res) => {
+      localStorage.setItem("token", `${res[1]}`)
+      Navigate('/')
+    })
+    .catch(err => console.error(err))
+
+    
+    }
   return (
     <div id="signup">
         <div className="container">

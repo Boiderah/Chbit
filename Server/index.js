@@ -9,84 +9,6 @@ const User = require("./models/userModel");
 
 dotenv.config()
 connectdb();
-const users = [
-    {
-        email: 'gabby@gmail',
-        password: 'BENTEN',
-        Name: 'musa james',
-        country: 'USA',
-        gender: 'trans',
-
-    },
-    {
-        email: 'gabby@gmail.',
-        password: 'BENTEN',
-        Name: 'musa james',
-        country: 'USA',
-        gender: 'trans',
-
-    },
-    {
-        email: 'gabby@gmail',
-        password: '<PASSWORD>',
-        Name: 'musa james',
-        country: 'USA',
-        gender: 'trans',
-
-    },
-
-]
-
-const countries = [
-    {
-        name: 'India',
-        code: 'IN'
-    },
-    {
-        name: 'USA',
-        code: 'US'
-    },
-    {
-        name: 'China',
-        code: 'CN'
-    },
-    {
-        name: 'Japan',
-        code: 'JP'
-    },
-    {
-        name: 'Germany',
-        code: 'DE'
-    },
-    {
-        name: 'France',
-        code: 'FR'
-    },
-    {
-        name: 'Brazil',
-        code: 'BR'
-    },
-    {
-        name: 'Russia',
-        code: 'RU'
-    },
-    {
-        name: 'South Korea',
-        code: 'KR'
-    },
-    {
-        name: 'Italy',
-        code: 'IT'
-    },
-    {
-        name: 'Spain',
-        code: 'ES'
-    },
-    {
-        name: 'Spain',
-        code: 'ES'
-    },
-]
 app.use(
     cors({
         origin: ['http://localhost:5173', 'https://localhost:5176']
@@ -95,18 +17,40 @@ app.use(
 
 app.use(express.json())
 
-app.post('/Login',(req, res) => {
+app.post('/Login', async (req, res) => {
     const { email, password } = req.body;
     console.log(req.body);
-    const user = users.find(u => u.email == email && u.password == password);
+    const user = await User.findOne({email});
     console.log(user);
-    if (user) {
+    if (user.password === password) {
         res.send([user, 'udheuiiejs.token']);
     } else {
         res.status(401).send('Invalid credentials');
     }
 }
 )
+app.post('/signup', async (req, res) => {
+    const { email, password, fullName, phoneNumber } = req.body;
+    console.log(email, password, fullName);
+    
+    const user = await User.findOne({email});
+    console.log(user);
+    if(user){res.status(401).send("Email already in use")}
+    else{
+
+        const newUser = User.create({
+            email: email,
+            password: password,
+            fullName: fullName,
+            phoneNumber: phoneNumber
+        })
+        
+        if(newUser){res.send('successfully created')}
+    }
+}
+)
+
+
 
 app.get('/countries', (req, res) => {
     res.send(countries);

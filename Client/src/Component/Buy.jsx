@@ -38,12 +38,12 @@ const Buy = () => {
 
           <label>
             <span>AccountNumber</span>
-            <input className="input" type="password" placeholder="AccountNumber" required />
+            <input className="input" type="text" placeholder="AccountNumber" required />
           </label>
 
           <label>
             <span>AccountName</span>
-            <input className="input" type="password" placeholder="AccountName" required />
+            <input className="input" type="text" placeholder="AccountName" required />
           </label>
 
           <div>
@@ -61,32 +61,6 @@ const Buy = () => {
           </div>
         </div>
 
-      {/* );
-    }; */}
-
-    {/* const CheckoutCard = () => {
-      return (
-        <div className="card checkout">
-          <div className="footer">
-            <label className="price">$280.40</label>
-            <button className="checkout-btn">Checkout</button>
-          </div>
-        </div>
-      );
-    };
-
-    const CheckoutPage = () => {
-      return (
-        <div>
-          <div className="container">
-            <div className="checkout-container">
-              <PaymentDetails />
-              <CheckoutCard />
-            </div>
-          </div>
-        </div>
-      );
-    }; */}
       
     </form>
     </div>
