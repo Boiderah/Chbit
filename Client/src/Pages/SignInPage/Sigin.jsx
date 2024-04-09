@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Signin.css";
 import { useState } from "react";
+import loginimg from "../assets/Res/Loginimg.png";
 
 const Sigin = () => {
   const [ email, setEmail] = useState("")
@@ -34,6 +35,10 @@ const Sigin = () => {
 
   return (
     <div className="container">
+    <div id="loginimg">
+      <img src="{loginimg}" alt="" />
+    </div>
+    
        <form onSubmit={handleSubmit} className="form">
         <span className="brandname">Getbit</span>
         <span className="wlcb">Welcome back</span>
