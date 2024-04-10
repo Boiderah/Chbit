@@ -1,0 +1,30 @@
+.landingcont{
+    display: flex;
+    flex-direction: column;
+    /* width: 100; */
+}
+.landtxt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+}
+#landtxt1i{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #639;
+}
+#landtxt1i h1{
+    margin-bottom: 1vh;
+}
+.landinimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 4vh;
+}
