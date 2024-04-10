@@ -5,7 +5,7 @@
   border-radius: 1rem;
   background-color: #fff;
   color: rgb(97 97 97);
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  /* box-shadow: 20px 20px 30px rgba(0, 0, 0, .05); */
   width: 22rem;
   background-clip: border-box;
 }
@@ -19,18 +19,18 @@
   font-size: 1.9rem;
   font-family: Roboto, sans-serif;
   display: flex;
-  align-items: center;
+   align-items: center;
   justify-content: center;
 }
 .wlcb{
   color: #639;
-  height: 4rem;
+  height: 3rem;
   letter-spacing: 0;
   line-height: 1.275;
-  font-weight: 600;
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   font-family: Roboto, sans-serif;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   background-clip: border-box;
   border-radius: 0.75rem;
   color: #639;
-  box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4);
+  /* box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,rgba(33,150,243,.4); */
   /* height: 7rem; */
   letter-spacing: 0;
   line-height: 1.4rem;

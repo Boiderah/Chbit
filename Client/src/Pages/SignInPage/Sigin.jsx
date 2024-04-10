@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./Signin.css";
 import { useState } from "react";
-import loginimg from "../assets/Res/Loginimg.png";
+import loginimg from "../../assets/Res/loginimg.png";
 
 const Sigin = () => {
   const [ email, setEmail] = useState("")
@@ -35,14 +35,16 @@ const Sigin = () => {
 
   return (
     <div className="container">
-    <div id="loginimg">
-      <img src="{loginimg}" alt="" />
+
+    <div id="signupimg">
+      <img src= {loginimg} alt="" />
     </div>
-    
+
+    <div className="formcont">
        <form onSubmit={handleSubmit} className="form">
         <span className="brandname">Getbit</span>
-        <span className="wlcb">Welcome back</span>
-      {/* <span className="header">Login To Your Account</span> */}
+        <span className="wlcb">Hello! We’re glad to have you back</span>
+      <p className="welcometex">Log In to pick up from where you stopped.</p>
       <div className="inputs">
         <input placeholder="Email" className="input" type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/>
         <input placeholder="Password" className="input" type="password" value={Password}  onChange={(e)=>setPassword(e.target.value)} />
@@ -53,8 +55,6 @@ const Sigin = () => {
           </label>
           <label className="checkbox-text" htmlFor="checkbox">Remember me</label>
         </div>
-
-        {/* <button className="sign-in-btn">Submit</button> */}
         <button type="submit" className="form--submit">
            Login
        </button>
@@ -63,6 +63,7 @@ const Sigin = () => {
         <p className="signup-link">Don't have an account? <Link to={'/signup'}>Sign up</Link></p>
       </div>
     </form>
+    </div>
     </div>
   );
 };

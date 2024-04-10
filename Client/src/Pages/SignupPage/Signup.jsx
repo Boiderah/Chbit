@@ -1,5 +1,7 @@
+import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import "./Signup.css"
+import loginimg from "../../assets/Res/loginimg.png";
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -50,13 +52,20 @@ const Signup = () => {
 
     
     }
+
   return (
     <div id="signup">
         <div className="container">
+
+          <div id="signupimg">
+            <img src={loginimg} alt="" />
+      </div>
+
+    <div className="formcont">
        <form className="form" onSubmit={handleSubmit}>
-        <span className="wlc">Welcome To Getbit</span>
-        <span className="wlcin">Let's Get Started</span>
-       <span className="signup">Sign Up!</span>
+        <span className="wlc">Getbit</span>
+        <span className="wlcin">Hello! Create your Account</span>
+       <span className="signup">Welcome to Getbit Let’s get started.</span>
        <input type="email" placeholder="Full Name" className="form--input" value={firstName} onChange={handleEmailChange} />
        {/* <input type="email" placeholder="last Name" className="form--input" value={lastName} onChange={handleEmailChange} /> */}
        <input type="email" placeholder="Email address" className="form--input" value={email} onChange={handleEmailChange} />
@@ -65,7 +74,11 @@ const Signup = () => {
        <button type="submit" className="form--submit">
            Sign up
        </button>
+       <p className="signup-link">Already have a Getbit Account?
+        <Link to={'/signin'}>Sign in</Link>
+        </p>
       </form>
+     </div>
       </div>  
     </div>
   );
