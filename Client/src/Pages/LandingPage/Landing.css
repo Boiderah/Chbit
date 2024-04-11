@@ -219,3 +219,37 @@ line-height: 20px;
 text-align: left;
 color: #513173;
 }
+#starttrade{
+    border: 1px solid black;
+    height: 50vh;
+    background: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.starttrade1{
+    border: 1px solid white;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.starttrade1 h3{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: #513173;
+}
+.starttrade1 p{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+    text-align: center;
+    color: #FCFFFF;
+
+}

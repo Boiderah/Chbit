@@ -91,6 +91,18 @@ const Landing = () => {
       </div>
       </div>
 
+      <div id="starttrade">
+         <div className="starttrade1">
+          <h3>Start trading on Getbit</h3>
+          <p>Sign up for free to start buying and selling bitcoin and other crypto coins on <br />Getbit in real time.</p>
+
+          <div className="viewmarkbnt">
+      <div className="viewmarkbnt1">
+        <h3>Get Started</h3>
+      </div>
+      </div>
+         </div>
+      </div>
     </div>
   )
 }
