@@ -19,7 +19,16 @@
     color: #639;
 }
 #landtxt1i h1{
-    margin-bottom: 1vh;
+    text-align: center;
+}
+#landtxt1i p{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #513173;
+
 }
 .landinimg{
     display: flex;
@@ -27,4 +36,186 @@
     align-items: center;
     border: 1px solid black;
     margin-bottom: 4vh;
+}
+.landtxt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 6vh;
+}
+.landtxt2i{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #513173;
+}
+ .landtxt2i h2{
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+    color: #513173;
+    margin-bottom: 2vh;
+}
+.landtxt2i h5{
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.5px;
+text-align: center;  
+}
+.actionbtn{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-bottom: 7vh;
+}
+.actionbtn1{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F9FAF9;
+    width: 60%;
+    height: 100%;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+#btnBandS{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    width: 37%;
+    height: 5vh;
+}
+#buybox{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5D9E3A;
+    color: #F9FAF9;
+    border-radius: 5px;
+    width: 10vw;
+    height: 4vh;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+}
+#sellbox{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 4vh;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.petti1{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 7vh;
+}
+.viewmarkbnt{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+.viewmarkbnt1{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%; 
+    height: 10vh;
+    border-radius: 33px;
+    color: #F9FAF9;
+    background: linear-gradient(90deg, #0C0C0C 0%, #513173 100%);
+}
+.howItWorks{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 20px;
+}
+.imgdivcont{
+    width: 20vw;
+    /* height: 40vh; */
+}
+.benefitBox{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* margin-bottom: 7vh; */
+}
+.benefitbx{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;  */
+    background: #F9FAF9;
+    width: 50%;
+    height: 60%;
+}
+.benefitbx h2{
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    color: #513173;
+    margin-bottom: 7vh;
+}
+#benefitToolsCont{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 40%;
+    /* justify-content:space-between ; */
+    gap: 20px;
+}
+.benefittools{
+    border: 1px solid #0D4740;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    width: 25%;
+    height: 70%;
+}
+.benefittools img{
+    height: 30px;
+}
+.benefittools p{
+font-family: Inter;
+font-size: 15px;
+font-weight: 700;
+line-height: 20px;
+text-align: left;
+color: #513173;
 }
