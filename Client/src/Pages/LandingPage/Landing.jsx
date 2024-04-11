@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useNavigate } from "react-router-dom";
 import "./Landing.css"
 import p2pimg from "../../assets/Res/p2pimg.png";
 import img1 from "../../assets/Res/img1.png";
@@ -96,12 +97,18 @@ const Landing = () => {
           <h3>Start trading on Getbit</h3>
           <p>Sign up for free to start buying and selling bitcoin and other crypto coins on <br />Getbit in real time.</p>
 
-          <div className="viewmarkbnt">
-      <div className="viewmarkbnt1">
-        <h3>Get Started</h3>
+          <div className="getStarted">
+      <div className="getStartedi">
+      <Link to={'/signup'}>Get Started</Link>
       </div>
       </div>
          </div>
+      </div>
+
+      <div className="landlastimg">
+      <div className="landlastimg1">
+        <h1>We won’t toot our horns; <br/> Our users do that for us.</h1>
+      </div>
       </div>
     </div>
   )

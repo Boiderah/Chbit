@@ -61,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
     /* padding-bottom: 2vh; */
   }
   
@@ -72,6 +73,7 @@
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 1em;
+    text-align: left;
   }
   
   .form--input {

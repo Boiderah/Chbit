@@ -8,10 +8,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #landtxt1i{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,19 +34,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     margin-bottom: 4vh;
+    /* border: 1px solid black; */
 }
 .landtxt2{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
     margin-bottom: 6vh;
+    /* border: 1px solid black; */
 }
 .landtxt2i{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,14 +221,14 @@ color: #513173;
 }
 #starttrade{
     border: 1px solid black;
-    height: 50vh;
+    height: 40vh;
     background: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .starttrade1{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width: 50%;
     height: 80%;
     display: flex;
@@ -251,5 +251,63 @@ color: #513173;
     line-height: 18px;
     text-align: center;
     color: #FCFFFF;
-
+    margin-bottom: 5vh;
+}
+.getStarted{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%
+    /* margin-bottom: 5vh; */
+}
+.getStartedi{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 7vh;
+    border-radius: 33px;
+    color: #F9FAF9;
+    background: linear-gradient(90deg, #0C0C0C 0%, #513173 100%);
+}
+.getStartedi Link{
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 10px;
+    text-align: center;
+    color: #F2F4F3;
+}
+.landlastimg{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:50vh;
+    margin-bottom:7vh;
+    top: 3160.1px;
+    left: -0.35px;
+    gap: 0px;
+    opacity: 5px;
+    background-image: linear-gradient(73.33deg, #000000 14.06%, #513173 52.14%, #4790B9 67.03%, #0C0C0C 80.15%);
+}
+.landlastimg1{
+    /* border:1px solid white; */
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.landlastimg1 h1{
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFDFD;
 }

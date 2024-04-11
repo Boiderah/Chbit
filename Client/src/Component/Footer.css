@@ -1,0 +1,132 @@
+.footercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #FFFFFF;
+}
+#footerblackbox{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+    width: 65%;
+    height: 85%;
+    margin-top: -10vh;
+    background: #212121;
+    border-radius: 20px;
+    gap: 0.6vw;
+}
+#contbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerblackbox1{
+    /* border: 1px solid white; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-bottom: 1px solid #A1A3A2
+}
+.footertxt1{
+    /* border: 1px solid white; */
+    width: 20%;
+    height: 90%;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+.footertxt1 h4{
+    font-family: Inter;
+    font-size: 15.63px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+    color: #F2F4F3;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+.footertxt1 p{
+font-family: Inter;
+font-size: 11.06px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+color: #F2F4F3;
+}
+#belowline{
+    margin-top: 3vh;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#belowline h2{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #F2F4F3;
+}
+#belowline p{
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #F2F4F3;
+    margin: 2vh 0vw;
+}
+#belowline h1{
+    font-family: Inter;
+    font-size: 57.89px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    color: #513173;
+}
+#belowline h5{
+    font-family: Inter;
+    font-size: 14.38px;
+    font-weight: 100;
+    line-height: 22.82px;
+    text-align: center;
+    color: #F2F4F3;
+    /* margin-bottom: 6vh; */
+}
+.mediacont{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 0%; */
+}
+.mediacont .media{
+    /* border: 1px solid white; */
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.media img{
+    width: 32px;
+    height: 32px;
+    top: 604.81px;
+    left: 512.5px;
+    gap: 0px;
+    opacity: 0px;
+}
+.appstorei{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0vw;
+}
