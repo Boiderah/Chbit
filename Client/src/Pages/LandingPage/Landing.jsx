@@ -6,10 +6,15 @@ import img1 from "../../assets/Res/img1.png";
 import clock from "../../assets/Res/clock.png";
 import wallet from "../../assets/Res/wallet.png";
 import span from "../../assets/Res/span.png";
+import Footer from '../../Component/Footer';
+import Navbar from '../../Component/Navbar';
+
+
 
 const Landing = () => {
   return (
     <div className="landingcont">
+      <Navbar/>
 
       <div className="landtxt1">
       <div id="landtxt1i">
@@ -110,6 +115,7 @@ const Landing = () => {
         <h1>We won’t toot our horns; <br/> Our users do that for us.</h1>
       </div>
       </div>
+      <Footer/>
     </div>
   )
 }

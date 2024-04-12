@@ -4,6 +4,14 @@
     align-items: center;
     color: #639;
 }
+#navcname h1{
+    font-family: Inter;
+    font-size: 57.89px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    color: #513173;
+}
 #navmiddle{
     display: flex;
     justify-content: space-between;

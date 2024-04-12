@@ -113,20 +113,20 @@ color: #F2F4F3;
     width: 30%;
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-.media img{
-    width: 32px;
-    height: 32px;
-    top: 604.81px;
-    left: 512.5px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 10px;
 }
 .appstorei{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2vh 0vw;
+}
+.media img{
+    width: 29px;
+    height: 32px;
+    top: 504.81px;
+    left: 512.5px;
+    opacity: 0px;
 }

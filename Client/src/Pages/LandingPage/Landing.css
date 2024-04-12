@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 9vh;
     /* border: 1px solid black; */
 }
 #landtxt1i{
@@ -20,6 +21,14 @@
 }
 #landtxt1i h1{
     text-align: center;
+    color: #513173;
+    font-family: Inter;
+    font-size: 47.89px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 3vh;
+    
 }
 #landtxt1i p{
     font-family: Inter;
@@ -28,6 +37,7 @@
     line-height: 20px;
     text-align: center;
     color: #513173;
+    margin-bottom: 3vh;
 
 }
 .landinimg{
@@ -286,7 +296,7 @@ color: #513173;
     justify-content:center;
     align-items:center;
     height:50vh;
-    margin-bottom:7vh;
+    /* margin-bottom:7vh; */
     top: 3160.1px;
     left: -0.35px;
     gap: 0px;
