@@ -10,6 +10,7 @@ import yellow from "../../assets/Res/yellow.png";
 import blue from "../../assets/Res/blue.png";
 import tick from "../../assets/Res/tickgood.png";
 import people from "../../assets/Res/people.png";
+import Footer from '../../Component/Footer';
 
 const Company = () => {
   return (
@@ -136,8 +137,8 @@ for blockchain payments across emerging markets.
                 <p>Trade with the coolest people in crypto, there is an <br /> extra spot reserved for you. Join us now</p>
 
                 <div className="TakeMeThere">
-                  <div className="TakeMeThere">
-                    <h3>Yes, Take Me There</h3>
+                  <div className="TakeMeThere1">
+                    <h5>Yes, Take Me There</h5>
                   </div>
                   </div>
 
@@ -149,6 +150,8 @@ for blockchain payments across emerging markets.
               </div>
             </div>
           </div>
+
+          <Footer/>
     </div>
   )
 }

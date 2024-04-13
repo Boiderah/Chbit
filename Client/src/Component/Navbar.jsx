@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="navcont">
         <div id="navcname">
-            <h1>Getbit</h1>
+        <Link to={'/landing'}><h1>Getbit</h1></Link>
         </div>
 
         <div id="navmiddle">

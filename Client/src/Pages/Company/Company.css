@@ -1,17 +1,20 @@
 .CompanyCont{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* height: 250vh;  */
+    /* width: 100; */
+    /* margin-top: 5vh; */
     display: flex;
     flex-direction: column;
-    /* width: 100; */
 }
 .compdivi{
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    border: 1px solid black;
     height: 40%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 #comdiv1{
     /* border: 1px solid black; */
@@ -70,12 +73,13 @@ text-align: left;
 color: #303131;
 }
 .compdivii{
-    display: flex;
     /* justify-content: center; */
+    /* border: 1px solid black; */
+    display: flex;
     flex-direction: column;
     align-items: center; 
-    /* border: 1px solid black; */
     height: 40%;
+    margin-top: 3vh;
 }
 .compdiv2{
     /* border: 1px solid black; */
@@ -204,30 +208,31 @@ color: #303131;
     color: #F2F4F3;
 }
 .complastdiv{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* width: 70%; */
+    /* flex-direction: column; */
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
     align-items: center; 
     height: 50vh;
-    /* width: 70%; */
+    margin-bottom: 3vh;
 }
 #complastdiv1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* flex-direction: column; */
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
     align-items: center; 
     height: 100%;
     width: 80%;
 }
 .lastcomimg{
-    border: 1px solid black;
-    display: flex;
+    /* border: 1px solid black; */
     /* justify-content: center; */
-    flex-direction: column;
     /* align-items: center;  */
-    height: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 45%;
 }
 #lstimg{
@@ -237,6 +242,7 @@ color: #303131;
     left: 324px;
     gap: 0px;
     opacity: 0px;
+    margin: 3vh 0px;
 }
 .lastcomimg h1{
     font-family: Inter;
@@ -257,30 +263,46 @@ color: #303131;
 }
 .TakeMeThere{
     /* border: 1px solid black; */
-    display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
+    display: flex;
     margin-top: 3vh;
     
 }
-.TakeMeThere{
-    border: 1px solid black;
+.TakeMeThere1{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     width: 40%; 
     height: 5vh;
     border-radius: 33px;
-    color: #F9FAF9;
     background: linear-gradient(90deg, #0C0C0C 0%, #513173 100%);
+    /* border: 1px solid black; */
+    /* color: #F9FAF9; */
 }
- .peopleimg{
-    width: 235px;
-    height: 161.72px;
-    top: 20px;
-    left: 461px;
+.TakeMeThere1 h5{
+    font-family: Inter;
+    font-size: 13.56px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: center;
+    color: #F2F4F3;
+}
+.peopleimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+ .peopleimg img{
+    width: 90%;
+    height: 90%;
+    /* width: 635px;
+    height: 261.72px;
+    top: 40px;
+    left: 961px;
     gap: 0px;
-    opacity: 0px;
+    opacity: 0px;     */
 }
 
 

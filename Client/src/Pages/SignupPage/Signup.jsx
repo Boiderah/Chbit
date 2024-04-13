@@ -63,7 +63,7 @@ const Signup = () => {
 
     <div className="formcont">
        <form className="form" onSubmit={handleSubmit}>
-        <span className="wlc">Getbit</span>
+       <Link to={'/landing'}>  <span className="wlc">Getbit</span></Link>
         <span className="wlcin">Hello! Create your Account</span>
        <span className="signup">Welcome to Getbit Let’s get started.</span>
        <input type="email" placeholder="Full Name" className="form--input" value={firstName} onChange={handleEmailChange} />

@@ -42,7 +42,7 @@ const Sigin = () => {
 
     <div className="formcont">
        <form onSubmit={handleSubmit} className="form">
-        <span className="brandname">Getbit</span>
+       <Link to={'/landing'}>  <span className="brandname">Getbit</span></Link>
         <span className="wlcb">Hello! We’re glad to have you back</span>
       <p className="welcometex">Log In to pick up from where you stopped.</p>
       <div className="inputs">
