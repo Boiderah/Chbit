@@ -8,6 +8,7 @@ import Buy from './Component/Buy';
 import Navbar from './Component/Navbar';
 import Landing from './Pages/LandingPage/Landing';
 import Footer from './Component/Footer';
+import Company from './Pages/Company/Company';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
       <Route path="/navbar" element={<Navbar />} /> 
       <Route path="/footer" element={<Footer />} /> 
       <Route path="/landing" element={<Landing />} /> 
-      {/* <Route path="/company" element={<Company />} />  */}
+      <Route path="/company" element={<Company />} /> 
     </Routes>
     </BrowserRouter>
     </>
