@@ -8,7 +8,7 @@ import Dgreen from "../../assets/Res/Dgreen.png";
 import lgreen from "../../assets/Res/lgreen.png";
 import yellow from "../../assets/Res/yellow.png";
 import blue from "../../assets/Res/blue.png";
-import tick from "../../assets/Res/tickgood.png";
+import tick from "../../assets/Res/tickGood.png";
 import people from "../../assets/Res/people.png";
 import Footer from '../../Component/Footer';
 
