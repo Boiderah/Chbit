@@ -72,9 +72,7 @@ const Landing = () => {
       </div>
 
       <div id="howItWorks">
-        <div id="imgdivcont">
-        <img src={img1} alt="" />
-        </div>
+        <img src={img1}  alt="" />
       </div>
 
       <div className="benefitBox">
@@ -104,7 +102,7 @@ const Landing = () => {
 
           <div className="getStarted">
       <div className="getStartedi">
-      <Link to={'/signup'}>Get Started</Link>
+      <Link to={'/signup'} style={{textDecoration:"none", color:"#fff"}}>Get Started</Link>
       </div>
       </div>
          </div>
