@@ -5,7 +5,7 @@ import linkin from "../assets/Res/linkin.png";
 import instagram from "../assets/Res/instagram.png";
 import twitter from "../assets/Res/twitter.png";
 import appstore from "../assets/Res/appstore.png";
-import link from "../assets/Res/link.png";
+import Link from "../assets/Res/link.png";
 
 const Footer = () => {
   return (
@@ -59,7 +59,7 @@ const Footer = () => {
         <div className="appstore">
         <div className="appstorei">
             <img src={appstore} alt="" />
-            <img src={link} alt="" />
+            <img src={Link} alt="" />
         </div>
         </div>
 

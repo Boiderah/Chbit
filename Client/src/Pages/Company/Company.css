@@ -12,25 +12,19 @@
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    height: 40%;
+    height: 60%;
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
 #comdiv1{
     /* border: 1px solid black; */
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
     /* align-items: center; */
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: space-evenly;
     width: 80%;
     height: 50%;
 }
-/* #comdiv1{
-    width: 48px;
-    height: 54px;
-    gap: 0px;
-    opacity: 0px;
-} */
 .comptxt1{
     /* border: 1px solid black; */
     display: flex;
@@ -42,8 +36,8 @@
 }
 .compimg1{
     /* border: 1px solid black; */
-    display: flex;
     /* flex-direction: column; */
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 35%;
@@ -83,29 +77,29 @@ color: #303131;
 }
 .compdiv2{
     /* border: 1px solid black; */
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
     /* align-items: center; */
+    /* flex-direction: column; */
+    display: flex;
+    justify-content: space-evenly;
     width: 80%;
     height: 40%;
 }
 .fourcont{
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-    /* border: 1px solid black; */
     height: 100%;
     width: 40%;
 
 }
 .compdiv2i{
     /* border: 1px solid red; */
-    display: flex;
     /* flex-direction: column; */
-    justify-content: space-evenly;
     /* align-items: center; */
+    display: flex;
+    justify-content: space-evenly;
     width: 80%;
     height: 40%;
 }
@@ -165,9 +159,9 @@ color: #303131;
 }
 #valuecontent{
     /* border: 1px solid white; */
+    /* flex-direction: column; */
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
     align-items: center; 
     height: 80%;
     width: 70%;
@@ -181,8 +175,8 @@ color: #303131;
     justify-content: space-around;
     border-radius: 20px;
     width: 30%;
-    height: 30%;
-    border: 1px solid #030E0D;
+    height: 25%;
+    /* border: 1px solid #030E0D; */
     background: #212121;
     top: 144px;
     left: 916.66px;

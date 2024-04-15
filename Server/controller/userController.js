@@ -1,4 +1,4 @@
-const User = require("./models/userModel.js");
+const User = require("../models/userModel");
 
 
 const registerUser = async (req,res) => {
@@ -17,7 +17,7 @@ const registerUser = async (req,res) => {
             phoneNumber: phoneNumber
         })
         
-        if(newUser){res.send('successfully created')}
+        if(newUser){res.send({message:'successfully created'})}
     }
 }
 

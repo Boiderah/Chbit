@@ -4,8 +4,7 @@ const connectdb = require("./db");
 const dotenv = require('dotenv');
 const app = express();
 const port = 4000;
-const User = require("./models/userModel");
-const Seller = require("./models/userModel");
+const userRoutes = require("./routes/userRoutes");
 
 
 dotenv.config()

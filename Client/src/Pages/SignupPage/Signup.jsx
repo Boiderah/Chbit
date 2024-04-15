@@ -9,8 +9,7 @@ const Signup = () => {
   const [fullName, setFullName] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [subscribe, setSubscribe] = useState(false);
-
+  const Navigate = useNavigate()
   const handleFullNameChange = (e) => {
     setFullName(e.target.value);
   };
@@ -26,14 +25,11 @@ const Signup = () => {
     setConfirmPassword(e.target.value);
   };
 
-  const handleSubscribeChange = (e) => {
-    setSubscribe(e.target.checked);
-  };
-
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(email, Password)
+    console.log(email, password)
 
     fetch("http://localhost:4000/user",{
       method: "POST",
@@ -42,8 +38,9 @@ const Signup = () => {
       },
       body: JSON.stringify({
         email: email,
-        password: Password,
-        phoneNumber
+        password: password,
+        phoneNumber:"77777",
+        fullName: fullName
       }),
     })
     .then(res => res.json())
