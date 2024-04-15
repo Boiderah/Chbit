@@ -280,17 +280,20 @@ color: #513173;
     width: 100%; 
     height: 7vh;
     border-radius: 33px;
-    color: #F9FAF9;
+    /* color: #F9FAF9; */
     background: linear-gradient(90deg, #0C0C0C 0%, #513173 100%);
 }
-.getStartedi Link{
+.landingcont .getStartedi Link{
     font-family: Inter;
     font-size: 10px;
     font-weight: 600;
     line-height: 10px;
     text-align: center;
     color: #F2F4F3;
+    text-decoration: none;
+    
 }
+
 .landlastimg{
     display:flex;
     justify-content:center;
