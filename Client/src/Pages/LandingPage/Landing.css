@@ -79,7 +79,7 @@
   text-align: center;
 }
 .actionbtn {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@
   margin-bottom: 7vh;
 }
 .actionbtn1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,19 +95,21 @@
   background: #f9faf9;
   width: 60%;
   height: 100%;
-  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 24px 0px #afadad33;
 }
 #btnBandS {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5vh;
   width: 37%;
   height: 5vh;
+  box-shadow: 2px 4px 10px 2px #94919178;
+
 }
 #buybox {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +125,7 @@
   text-align: center;
 }
 #sellbox {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,13 +138,24 @@
   text-align: center;
 }
 .petti1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 75%;
   height: 7vh;
 }
 .petti {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+.petti{
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.699999988079px;
+    text-align: center;
+    color: #797A7A;
+
 }
 .viewmarkbnt {
   /* border: 1px solid black; */

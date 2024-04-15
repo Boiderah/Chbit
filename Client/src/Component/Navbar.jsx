@@ -7,18 +7,18 @@ const Navbar = () => {
   return (
     <div className="navcont">
         <div id="navcname">
-        <Link to={'/landing'}><h1>Getbit</h1></Link>
+        <Link to={'/landing'} style={{textDecoration:"none",}}><h1>Getbit</h1></Link>
         </div>
 
         <div id="navmiddle">
-        <Link to={'/Company'}>Company</Link>
-        <Link to={'/signin'}>Buy and Sell</Link>
+        <Link to={'/Company'} style={{textDecoration:"none"}}>Company</Link>
+      <Link to={'/signin'} style={{textDecoration:"none" }}>Buy and Sell</Link>
             {/* <p></p> */}
         </div>
 
         <div id="navlink">
-       <div className="navsignlink"><Link to={'/signin'}>Sign in</Link></div>
-       <div className="navsignlink"><Link to={'/signup'}>Sign up</Link></div>
+       <div className="navsignlink"><Link to={'/signin'} style={{textDecoration:"none"}}>Sign in</Link></div>
+       <div className="navsignlink"><Link to={'/signup'} style={{textDecoration:"none"}}>Sign up</Link></div>
         </div>
     </div>
   )

@@ -13,7 +13,7 @@ const Sigin = () => {
     e.preventDefault();
     console.log(email, Password)
 
-    fetch("http://localhost:4000/Login",{
+    fetch("http://localhost:4000/user/Login",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const Sigin = () => {
     }
 
   return (
-    <div className="container">
+    <div className="container1">
 
     <div id="signupimg">
       <img src= {loginimg} alt="" />
@@ -42,7 +42,7 @@ const Sigin = () => {
 
     <div className="formcont">
        <form onSubmit={handleSubmit} className="form">
-       <Link to={'/landing'}>  <span className="brandname">Getbit</span></Link>
+       <Link to={'/landing'} style={{textDecoration:"none", color:"#fff"}}>  <span className="brandname">Getbit</span></Link>
         <span className="wlcb">Hello! We’re glad to have you back</span>
       <p className="welcometex">Log In to pick up from where you stopped.</p>
       <div className="inputs">

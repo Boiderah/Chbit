@@ -6,6 +6,7 @@ import img1 from "../../assets/Res/img1.png";
 import clock from "../../assets/Res/clock.png";
 import wallet from "../../assets/Res/wallet.png";
 import span from "../../assets/Res/span.png";
+import swap from "../../assets/Res/swap.svg.png";
 import Footer from '../../Component/Footer';
 import Navbar from '../../Component/Navbar';
 
@@ -44,7 +45,7 @@ const Landing = () => {
       <div className="petti1">
       <div className="petti">
         <div id="UPdown">
-
+          <img src={swap} alt="" />
         </div>
         <div id="bi">
           <p>b</p>
@@ -57,6 +58,9 @@ const Landing = () => {
         <div id="lerdet">
           <p>ler</p>
           <p>det</p>
+        </div>
+        <div id="acton">
+        <p> Action</p>
         </div>
       </div>
       </div>
