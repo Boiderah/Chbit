@@ -25,7 +25,8 @@ const Sigin = () => {
     })
     .then(res => res.json())
     .then((res) => {
-      localStorage.setItem("token", `${res[1]}`)
+      console.log(res);
+      localStorage.setItem("token", `${res}`)
       Navigate('/')
     })
     .catch(err => console.error(err))
