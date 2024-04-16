@@ -29,8 +29,6 @@ const Sigin = () => {
       Navigate('/')
     })
     .catch(err => console.error(err))
-
-    
     }
 
   return (
