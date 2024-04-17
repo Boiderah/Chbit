@@ -2,9 +2,12 @@ import { Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import "./Signup.css"
 import loginimg from "../../assets/Res/loginimg.png";
+import api from "../../utility/api";
 
 const Signup = () => {
   // const [lastName, setLastName] = useState('');
+  const [errors, setErrors] = useState("")
+  const [Loading, setLoading] = useState(false)
   const [email, setEmail] = useState('');
   const [fullName, setFullName] = useState('');
   const [password, setPassword] = useState('');
@@ -27,32 +30,45 @@ const Signup = () => {
 
   
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password)
-
-    fetch("http://localhost:4000/user",{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
+    setLoading(true);
+    try {
+      const response =await api.post('user', {
         email: email,
         password: password,
-        phoneNumber:"77777",
         fullName: fullName
-      }),
-    })
-    .then(res => res.json())
-    .then((res) => {
-      localStorage.setItem("token", `${res[1]}`)
-      Navigate('/')
-    })
-    .catch(err => console.error(err))
+      })
+      console.log(response)
+      setLoading(false)
+    } catch (error){
+      console.log(error)
+      setErrors(error.response.data)
+      setLoading(false)
+    }
+
+    // console.log(email, password)
+
+    // fetch("http://localhost:4000/user",{
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     email: email,
+    //     password: password,
+    //     phoneNumber:"77777",
+    //     fullName: fullName
+    //   }),
+    // })
+    // .then(res => res.json())
+    // .then((res) => {
+    //   localStorage.setItem("token", `${res[1]}`)
+    //   Navigate('/')
+    // })
+    // .catch(err => console.error(err))
 
     
-    const [errors, setErrors] = useState("")
-    const [Loading, setLoading] = useState(false)
   }
 
   return (
@@ -78,6 +94,7 @@ const Signup = () => {
        <p className="signup-link">Already have a Getbit Account?
         <Link to={'/signin'}>Sign in</Link>
         </p>
+      <p>{errors && errors}</p>
       </form>
      </div>
       </div>  
