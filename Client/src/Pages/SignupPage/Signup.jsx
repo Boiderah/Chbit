@@ -51,7 +51,9 @@ const Signup = () => {
     .catch(err => console.error(err))
 
     
-    }
+    const [errors, setErrors] = useState("")
+    const [Loading, setLoading] = useState(false)
+  }
 
   return (
     <div id="signup">
@@ -70,7 +72,7 @@ const Signup = () => {
        <input type="email" placeholder="Email address" className="form--input" value={email} onChange={handleEmailChange} />
        <input type="password" placeholder="Password" className="form--input" value={password} onChange={handlePasswordChange} />
        <input type="password" placeholder="Confirm password" className="form--input" value={confirmPassword} onChange={handleConfirmPasswordChange} />
-       <button type="submit" className="form--submit">
+       <button type="submit" disabled={Loading} className="form--submit">
            Sign up
        </button>
        <p className="signup-link">Already have a Getbit Account?

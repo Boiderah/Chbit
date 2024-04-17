@@ -9,6 +9,7 @@ const userRoutes = require("./routes/userRoutes");
 
 dotenv.config()
 connectdb();
+
 app.use(
     cors({
         origin: ['http://localhost:5173', 'https://localhost:5176']

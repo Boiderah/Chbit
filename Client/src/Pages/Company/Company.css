@@ -175,8 +175,8 @@ color: #303131;
     justify-content: space-around;
     border-radius: 20px;
     width: 30%;
-    height: 25%;
-    /* border: 1px solid #030E0D; */
+    /* height: 25%; */
+    padding: 2vh 0vw;
     background: #212121;
     top: 144px;
     left: 916.66px;

@@ -1,5 +1,5 @@
 const User = require("../models/userModel");
-const { default: generatetoken } = require("../utility/generatetokenutility");
+const  generatetoken = require("../utility/generatetokenutility");
 
 
 const registerUser = async (req,res) => {
@@ -42,7 +42,7 @@ const authUser = async (req,res) => {
     if(!isMatch){
         res.status(401).json({message: "Invalid credentials"});
     }
-    res.status(200).json({message:"successfully authenticated" ,token:generatetoken ({id:user.__di, email:user.email, fullName:user.fullName })});
+    res.status(200).json({message:"successfully authenticated" ,token:generatetoken({id:user.__di, email:user.email, fullName:user.fullName })});
 }
 
 

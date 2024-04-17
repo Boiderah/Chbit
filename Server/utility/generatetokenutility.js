@@ -1,4 +1,4 @@
-const jwt = require('jasonwebtoken');
+const jwt = require('jsonwebtoken');
 
 
 const generatetoken = (id) => {
@@ -12,4 +12,4 @@ const generatetoken = (id) => {
     return token
 }
 
-module.export = generatetoken;
+module.exports = generatetoken;
