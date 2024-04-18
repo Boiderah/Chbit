@@ -44,7 +44,7 @@ const Signup = () => {
     } catch (error){
       console.log(error)
       setErrors(error.response.data)
-      setLoading(false)
+      setLoading(false) 
     }
 
     // console.log(email, password)
@@ -67,8 +67,6 @@ const Signup = () => {
     //   Navigate('/')
     // })
     // .catch(err => console.error(err))
-
-    
   }
 
   return (
