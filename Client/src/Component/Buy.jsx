@@ -1,52 +1,74 @@
-import React from 'react';
-import "./Buy.css"
+import React from "react";
+import "./Buy.css";
 
 const Buy = () => {
-  
   return (
     <div className="buycont">
-
-
-        <form className="buyform">
-          <div className="flex">
-            <label>
-              <span>coin</span>
-              <input className="input" type="text" placeholder="coin" required />
-            </label>
-
-            <label>
-              <span>quantity</span>
-              <input className="input" type="text" placeholder="quantity" required />
-            </label>
-          </div>
-          <div className="flex">
-            <label>
-              <span>Rate</span>
-              <input className="input" type="text" placeholder="Rate" required />
-            </label>
-
-            <label>
-              <span>phonenumber</span>
-              <input className="input" type="text" placeholder="phonenumber" required />
-            </label>
-          </div>
-
+      <form className="buyform">
+        <div className="flex">
           <label>
-            <span>bankName</span>
-            <input className="input" type="text" placeholder="bankName" required />
+            <span>coin</span>
+            <input className="input" type="text" placeholder="coin" required />
           </label>
 
           <label>
-            <span>AccountNumber</span>
-            <input className="input" type="text" placeholder="AccountNumber" required />
+            <span>quantity</span>
+            <input
+              className="input"
+              type="text"
+              placeholder="quantity"
+              required
+            />
+          </label>
+        </div>
+        <div className="flex">
+          <label>
+            <span>Rate</span>
+            <input className="input" type="text" placeholder="Rate" required />
           </label>
 
           <label>
-            <span>AccountName</span>
-            <input className="input" type="text" placeholder="AccountName" required />
+            <span>phonenumber</span>
+            <input
+              className="input"
+              type="text"
+              placeholder="phonenumber"
+              required
+            />
           </label>
+        </div>
 
-          <div>
+        <label>
+          <span>bankName</span>
+          <input
+            className="input"
+            type="text"
+            placeholder="bankName"
+            required
+          />
+        </label>
+
+        <label>
+          <span>AccountNumber</span>
+          <input
+            className="input"
+            type="text"
+            placeholder="AccountNumber"
+            required
+          />
+        </label>
+
+        <label>
+          <span>AccountName</span>
+          <input
+            className="input"
+            type="text"
+            placeholder="AccountName"
+            required
+          />
+        </label>
+
+        <div>
           <hr />
           <div className="payments">
             <span>PAYMENT</span>
@@ -60,12 +82,9 @@ const Buy = () => {
             </div>
           </div>
         </div>
-
-      
-    </form>
+      </form>
     </div>
   );
 };
-
 
 export default Buy;

@@ -1,22 +1,21 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 const connectdb = require("./db");
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 const app = express();
 const port = 4000;
 const userRoutes = require("./routes/userRoutes");
 
-
-dotenv.config()
+dotenv.config();
 connectdb();
 
 app.use(
-    cors({
-        origin: ['http://localhost:5173', 'https://localhost:5176']
-    })
-)
+  cors({
+    origin: ["http://localhost:5173", "https://localhost:5176"],
+  })
+);
 
-app.use(express.json())
+app.use(express.json());
 
 // app.post('/Login', async (req, res) => {
 //     const { email, password } = req.body;
@@ -33,7 +32,7 @@ app.use(express.json())
 // app.post('/signup', async (req, res) => {
 //     const { email, password, fullName, phoneNumber } = req.body;
 //     console.log(email, password, fullName);
-    
+
 //     const user = await User.findOne({email});
 //     console.log(user);
 //     if(user){res.status(401).send("Email already in use")}
@@ -45,15 +44,14 @@ app.use(express.json())
 //             fullName: fullName,
 //             phoneNumber: phoneNumber
 //         })
-        
+
 //         if(newUser){res.send('successfully created')}
 //     }
 // }
 // )
 
-app.use("/user", userRoutes)
-
+app.use("/user", userRoutes);
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}!`);
-}); 
+  console.log(`Example app listening on port ${port}!`);
+});
