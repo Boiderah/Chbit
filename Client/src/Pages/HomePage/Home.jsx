@@ -1,20 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Routes, Route } from "react-router-dom";
 import btclogo2 from "../../assets/Res/btclogo2.png";
 import footer from "../../assets/Res/footer.png";
 import ethereum from "../../assets/Res/ethereum.png";
 import usdt from "../../assets/Res/usdt.png";
 import litecoin from "../../assets/Res/litecoin.png";
+import Buy from "../../Component/Buy";
+import Sell from "../../Component/Sell";
 
 const Home = () => {
   const Navigate = useNavigate();
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (!token) {
-      Navigate("/signin");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const token = localStorage.getItem("token");
+  //   if (!token) {
+  //     Navigate("/signin");
+  //   }
+  // }, []);
+  const [trans, setTrans] = useState("buy")
+  function gotobuy() {
+    setTrans("buy")
+    Navigate("/buy")
+  }
+  function gotosell() {
+    setTrans("sell")
+    Navigate("/sell")
+  }
 
   return (
     <div id="homepage">
@@ -67,7 +78,7 @@ const Home = () => {
 
       </div>
 
-    <div className="prod">
+    {/* <div className="prod">
     <div id="bandS">
       <div className="bandsbtn">
         <h1>Buy</h1>
@@ -76,7 +87,18 @@ const Home = () => {
         <h1>Sell</h1>
       </div>
       </div>
-      </div>
+      </div> */}
+
+  <div class="tab-container">
+      <button onClick={gotobuy} className="tab tab--1">Monthly</button>
+      <button onClick={gotosell} class="tab tab--2">Annual</button>
+      <div className={`indicator ${trans=="buy"?'left':"right"}`} ></div>
+    </div>
+    <Routes>
+      <Route path="/buy" element={<Buy />} />
+      <Route path="/sell" element={<Sell />} />
+    </Routes>
+
       
     </div>
   );

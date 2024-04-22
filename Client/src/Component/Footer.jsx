@@ -5,7 +5,7 @@ import linkin from "../assets/Res/linkin.png";
 import instagram from "../assets/Res/instagram.png";
 import twitter from "../assets/Res/twitter.png";
 import appstore from "../assets/Res/appstore.png";
-import Link from "../assets/Res/Link.png";
+import Link from "../assets/Res/link.png";
 
 const Footer = () => {
   return (
