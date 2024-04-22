@@ -1,0 +1,98 @@
+.buycont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buyform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #fff;
+    color: #639;
+    border: 1px solid #639;
+  }
+  .buyform .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .buyform .form label {
+      position: relative;
+  }
+  
+.buyform label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .buyform label .input + span {
+    color: #639;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .buyform label .input:placeholder-shown + span {
+      top: 12.5px;
+      font-size: 0.9em;
+    }
+    
+    .buyform label .input:focus + span,
+    .buyform label .input:valid + span {
+    color: #639;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .buyform .input {
+    font-size: medium;
+  }
+  
+  
+  @keyframes pulse {
+      from {
+          transform: scale(0.9);
+          opacity: 1;
+        }
+    
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+} 
+.payments .details {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    padding: 0px;
+    gap: 5px;
+  }
+  
+  .payments .details span:nth-child(odd) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #639;
+    margin: auto auto auto 0;
+  }
+  
+  .payments .details span:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #639;
+    margin: auto 0 auto auto;
+  }

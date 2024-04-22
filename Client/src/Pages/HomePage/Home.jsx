@@ -8,6 +8,7 @@ import usdt from "../../assets/Res/usdt.png";
 import litecoin from "../../assets/Res/litecoin.png";
 import Buy from "../../Component/Buy";
 import Sell from "../../Component/Sell";
+import { Pivot as Hamburger } from 'hamburger-react'
 
 const Home = () => {
   const Navigate = useNavigate();
@@ -26,6 +27,12 @@ const Home = () => {
     setTrans("sell")
     Navigate("/sell")
   }
+    const  [isOpen, setOpen] = useState(false)
+    function logOut() {
+      localStorage.removeItem("token")
+      Navigate("/signin")
+    }
+  
 
   return (
     <div id="homepage">
@@ -38,7 +45,18 @@ const Home = () => {
 
       <div className="head2conti">
         <img src="" alt="" />
-        <h1>weprofile</h1>
+        <Hamburger toggled ={isOpen} toggle={setOpen} />
+        {
+          isOpen? (
+            <div className="dropdown">
+              <div className="dropdown-content">
+                <div className="dropdown-item" onClick={gotobuy}>Overview</div>
+                <div className="dropdown-item" onClick={gotosell}>Change Password</div>
+                <p onClick={logOut}>  Logout</p>
+              </div>
+            </div>
+          ) : null
+        }
       </div>
       </div>
       </div>
@@ -75,7 +93,6 @@ const Home = () => {
           
         </div>
       </div>
-
       </div>
 
     {/* <div className="prod">
@@ -90,8 +107,8 @@ const Home = () => {
       </div> */}
 
   <div class="tab-container">
-      <button onClick={gotobuy} className="tab tab--1">Monthly</button>
-      <button onClick={gotosell} class="tab tab--2">Annual</button>
+      <button onClick={gotobuy} className="tab tab--1">Buy</button>
+      <button onClick={gotosell} className="tab tab--2">Sell</button>
       <div className={`indicator ${trans=="buy"?'left':"right"}`} ></div>
     </div>
     <Routes>

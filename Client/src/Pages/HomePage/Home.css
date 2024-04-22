@@ -1,7 +1,7 @@
 #homepage {
   /* display: flex; */
   border: 1px solid black;
-  height: 100vh;
+  /* height: 100vh; */
 }
 #homepage .homepgnavb {
   display: flex;
@@ -54,12 +54,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-bottom: 5vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #homepage .p2pdesignbox1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,7 +173,7 @@
   padding: 2px;
   background-color: #ebebec;
   border-radius: 9px;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 20px 10vh 20px;
   /* width: 100vw; */
 }
 
@@ -205,6 +205,9 @@
   flex-grow: 1;
   cursor: pointer;
   font-weight: 500;
+  color:#639;
+  font-size: 20px;
+  font-weight: 400px;
 }
 .left {
   left: 2px;
