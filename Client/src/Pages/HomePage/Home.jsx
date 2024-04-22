@@ -12,23 +12,57 @@ const Home = () => {
   }, []);
 
   return (
-    <div id="home">
-      <div className="contain">
+    <div id="homepage">
+      <div className="homepgnavb">
+      <div className="navbar002">
+      <div className="head2cont">
+        <img src="" alt="" />
         <h1>Getbit</h1>
       </div>
-      <div className="profile">profile</div>
-      <div id="contentbox">
-        <div className="prod">
-          <div id="bandS">
-            <h3>Buy</h3>
-            <h3>/</h3>
-            <h3>Sell</h3>
-          </div>
-          <div id="trns">
-            <h3>Order</h3>
-          </div>
+
+      <div className="head2conti">
+        <img src="" alt="" />
+        <h1>weprofile</h1>
+      </div>
+      </div>
+      </div>
+
+      <div id="p2pdesignbox">
+      <div className="p2pdesignbox1">
+        <div className="p2pdesignim1">
+          <img src="" alt="" />
+        </div>
+        <div className="p2pdesignim1">
+          <img src="" alt="" />
+
+        </div>
+        <div className="p2pdesignbox2">
+          <h1> P2P Trading </h1>
+          <h1>Safe - Fast - Diverse</h1>
+        </div>
+        <div className="p2pdesignim2">
+          <img src="" alt="" />
+          
+        </div>
+        <div className="p2pdesignim2">
+          <img src="" alt="" />
+          
         </div>
       </div>
+
+      </div>
+
+    <div className="prod">
+    <div id="bandS">
+      <div className="bandsbtn">
+        <h1>Buy</h1>
+      </div>
+      <div className="bandsbtn">
+        <h1>Sell</h1>
+      </div>
+      </div>
+      </div>
+      
     </div>
   );
 };

@@ -1,56 +1,148 @@
-#home #home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    height: 100vh;
+#homepage{
+  /* display: flex; */
+  border: 1px solid black;
+  height: 100vh;
   }
-  #home .contain{
+  #homepage .homepgnavb{
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+      /* flex-direction: column;
+      background: black; */
+      /* height: 100vh; */
+  }
+ #homepage .navbar002{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    /* height: 100vh; */
+    width: 80%;
+  }
+  #homepage .head2cont{
     color: #639;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid black;
     height: 5rem;
-    margin-top: -4vh;
-    /* margin-bottom: 1vh; */
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: Roboto, sans-serif;
+    /* margin-top: -4vh;
+    margin-bottom: 1vh; */
+  }
+  #homepage .head2conti{
+    color: #639;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid black;
+    /* height: 5rem; 
+    margin-top: -4vh; 
+    margin-bottom: 1vh; 
     letter-spacing: 0;
     font-weight: 400;
     font-size: 1.2rem;
-    font-family: Roboto, sans-serif;
+    font-family: Roboto, sans-serif; */
+  }
+  
+  #homepage #p2pdesignbox{
     display: flex;
-    align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
-  }
-  #home .profile{
-    color: #639;
-    height: 5vh;
+    align-items: center;
+    border: 1px solid black;
     margin-bottom: 5vh;
-    letter-spacing: 0;
-    line-height: 1.275;
-    font-weight: 400;
-    font-size: 1.4rem;
-    font-family: Roboto, sans-serif;
-    display: flex;
-    /* border: 1px solid black; */
   }
-  #home #contentbox{
+  #homepage .p2pdesignbox1{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80%;
+    top: 3160.1px;
+    left: -0.35px;
+    gap: 0px;
+    opacity: 5px;
+    background-image: linear-gradient(
+      73.33deg,
+      #000000 14.06%,
+      #513173 52.14%,
+      #4790b9 67.03%,
+      #0c0c0c 80.15%
+    );
+  }
+  #homepage .p2pdesignbox2 {
+    border:1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    /* height: 100vh; */
   }
-  
-  #home .prod{
+  #homepage .p2pdesignbox2 h1 {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color: #fffdfd;
+  }
+
+
+
+  #homepage .p2pdesignim1{
+    border: 1px solid white;
+    width: 10vw;
+    height: 100%;
+  }
+  #homepage .p2pdesignim2{
+    height: 100%;
+    border: 1px solid white;
+    width: 10vw;
+  }
+
+
+
+
+
+
+
+
+  #homepage .prod{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    /* width: 90%; */
     color: #639;
-    /* border: 1px solid black; */
+    border: 1px solid black;
   }
-  #home #bandS{
+  #homepage #bandS{
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 3px;
+    border: 1px solid black;
   }
+  #homepage .bandsbtn{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 4vh;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  #homepage .bandsbtn:focus{
+    border-bottom: 1px solid #639;
+  }
+
+
+  
