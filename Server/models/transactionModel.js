@@ -29,16 +29,25 @@ const transactionschema = mongoose.Schema({
     type: String,
     required: true,
   },
-  buyer: {
+  buyerId: {
+    type: String,
+    required: false,
+  },
+  SellerId: {
     type: String,
     required: true,
   },
-  Seller: {
+  SellerName: {
     type: String,
     required: true,
+  },
+  status: {
+    type: String,
+    required: true,
+    default:"started"
   },
 });
 
-const Seller = mongoose.model("Seller", transactionschema);
+const Transaction = mongoose.model("Transactions", transactionschema);
 
-module.exports = Seller;
+module.exports = Transaction;

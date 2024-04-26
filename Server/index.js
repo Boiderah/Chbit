@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const app = express();
 const port = 4000;
 const userRoutes = require("./routes/userRoutes");
+const transactionRoutes = require("./routes/transactionRoutes");
 
 dotenv.config();
 connectdb();
@@ -51,7 +52,8 @@ app.use(express.json());
 // )
 
 app.use("/user", userRoutes);
+app.use("/transaction", transactionRoutes);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`);
+  console.log(`Example app listening on port http://localhost:${port}`);
 });

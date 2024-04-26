@@ -14,7 +14,7 @@ const registerUser = async (req, res) => {
   if (user) {
     res.status(401).send("Email already in use");
   } else {
-    const newUser = User.create({
+    const newUser = await User.create({
       email: email,
       password: password,
       fullName: fullName,
@@ -47,7 +47,7 @@ const authUser = async (req, res) => {
   res.status(200).json({
     message: "successfully authenticated",
     token: generatetoken({
-      id: user.__di,
+      id: user._id,
       email: user.email,
       fullName: user.fullName,
     }),
