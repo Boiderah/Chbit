@@ -5,9 +5,14 @@ const Sell = () => {
     <div className="buycont">
     <form className="buyform">
       <div className="flex">
+
         <label>
           <span>coin</span>
-          <input className="input" type="text" placeholder="coin" required />
+          <input 
+          className="input" 
+          type="text" 
+          placeholder="coin" 
+          required />
         </label>
 
         <label>
@@ -23,7 +28,11 @@ const Sell = () => {
       <div className="flex">
         <label>
           <span>Rate</span>
-          <input className="input" type="text" placeholder="Rate" required />
+          <input 
+          className="input" 
+          type="text" 
+          placeholder="Rate" 
+          required />
         </label>
 
         <label>
@@ -66,7 +75,6 @@ const Sell = () => {
           required
         />
       </label>
-
       <div>
         <hr />
         <div className="payments">
@@ -81,6 +89,16 @@ const Sell = () => {
           </div>
         </div>
       </div>
+      
+      <label>
+        <span>PlaceOrder</span>
+        <input
+          className="input"
+          type="text"
+          placeholder="PlaceOrder"
+          required
+        />
+      </label>
     </form>
   </div>
   );

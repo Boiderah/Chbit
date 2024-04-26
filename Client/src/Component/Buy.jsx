@@ -4,7 +4,7 @@ import "./Buy.css";
 const Buy = () => {
   return (
     <div className="buycont">
-      <form className="buyform">
+      {/* <form className="buyform">
         <div className="flex">
           <label>
             <span>coin</span>
@@ -82,7 +82,7 @@ const Buy = () => {
             </div>
           </div>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import Footer from "../../Component/Footer";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import btclogo2 from "../../assets/Res/btclogo2.png";
 import footer from "../../assets/Res/footer.png";
@@ -116,7 +117,7 @@ const Home = () => {
       <Route path="/sell" element={<Sell />} />
     </Routes>
 
-      
+      <Footer  />
     </div>
   );
 };
