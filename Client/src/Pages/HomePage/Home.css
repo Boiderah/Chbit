@@ -1,53 +1,87 @@
 #homepage {
   /* display: flex; */
-  border: 1px solid black;
+  /* border: 1px solid ; */
   /* height: 100vh; */
+  width: 100%;
 }
 #homepage .homepgnavb {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4vh;
-  /* border: 1px solid black; */
-  /* flex-direction: column;
-      background: black; */
-  /* height: 100vh; */
+  margin-bottom: 4vh; 
+
+
 }
 #homepage .navbar002 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  /* border: 1px solid black; */
   /* height: 100vh; */
+}
+ #homepage .head1conti{
+  color: #639;
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  letter-spacing: 0;
+  font-weight: 600;
+  right: 0%;
+  top: 2%;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+  position: absolute;
+} 
+#homepage #body{
+  position: relative;
+  display: flex;
+  margin-top: 15%;
+
+}
+#homepage .dropdown{
+  display: flex;
+  background-image: linear-gradient(
+    73.33deg,
+    #000000 14.06%,
+    #513173 52.14%,
+    #4790b9 67.03%,
+    #0c0c0c 80.15%
+  );
+  width: 100%;
+  height:100% ;
+  color: white;
+  margin-top: 3%;
+  font-size: small;
+  position: relative;
+  margin-bottom: 5px;
+  gap: 5vh;
+  align-items: center;
+}
+#homepage .dropdown-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 5vh;
 }
 #homepage .head2cont {
   color: #639;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5rem;
   letter-spacing: 0;
   font-weight: 600;
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
-  /* border: 1px solid black; */
-  /* margin-top: -4vh;
-    margin-bottom: 1vh; */
 }
 #homepage .head2conti {
   color: #639;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid black; */
-  /* height: 5rem; 
-    margin-top: -4vh; 
-    margin-bottom: 1vh; 
-    letter-spacing: 0;
-    font-weight: 400;
-    font-size: 1.2rem;
-    font-family: Roboto, sans-serif; */
+
 }
 
 #homepage #p2pdesignbox {

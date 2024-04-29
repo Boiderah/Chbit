@@ -39,32 +39,12 @@ const Signup = () => {
       });
       console.log(response);
       setLoading(false);
+      Navigate ('/')
     } catch (error) {
       console.log(error);
       setErrors(error.response.data);
       setLoading(false);
     }
-
-    // console.log(email, password)
-
-    // fetch("http://localhost:4000/user",{
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({
-    //     email: email,
-    //     password: password,
-    //     phoneNumber:"77777",
-    //     fullName: fullName
-    //   }),
-    // })
-    // .then(res => res.json())
-    // .then((res) => {
-    //   localStorage.setItem("token", `${res[1]}`)
-    //   Navigate('/')
-    // })
-    // .catch(err => console.error(err))
   };
 
   return (

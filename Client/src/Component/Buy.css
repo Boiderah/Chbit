@@ -1,13 +1,13 @@
 .buycontainer{
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
     flex-direction: column;
     height: 100vh;
     /* border: 1px soli d #333; */
 }
 .orders{
-  margin-top: 10vh;
+  margin-top: 5vh;
   /* border: 1px solid #333; */
   display: flex;
   align-items: center;

@@ -40,12 +40,11 @@ const Home = () => {
       <div className="homepgnavb">
       <div className="navbar002">
       <div className="head2cont">
-        <img src="" alt="" />
         <h1>Getbit</h1>
       </div>
 
-      <div className="head2conti">
-        <img src="" alt="" />
+      <div className="head1conti">
+        
         <Hamburger toggled ={isOpen} toggle={setOpen} />
         {
           isOpen? (
@@ -61,7 +60,7 @@ const Home = () => {
       </div>
       </div>
       </div>
-
+      <div id="body">
       <div id="p2pdesignbox">
       <div className="p2pdesignbox1">
         <div className="p2pdesignim1">
@@ -111,6 +110,7 @@ const Home = () => {
       <button onClick={gotobuy} className="tab tab--1">Buy</button>
       <button onClick={gotosell} className="tab tab--2">Sell</button>
       <div className={`indicator ${trans=="buy"?'left':"right"}`} ></div>
+    </div>
     </div>
     <Routes>
       <Route path="/buy" element={<Buy />} />
