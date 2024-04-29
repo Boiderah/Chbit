@@ -9,6 +9,7 @@ import Navbar from "./Component/Navbar";
 import Landing from "./Pages/LandingPage/Landing";
 import Footer from "./Component/Footer";
 import Company from "./Pages/Company/Company";
+import Popup from "./Component/Popup";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/*" element={<Home />} />
           {/* <Route path="/buy" element={<Buy />} /> */}
           <Route path="/navbar" element={<Navbar />} />
+          <Route path="/popup" element={<Popup />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/company" element={<Company />} />

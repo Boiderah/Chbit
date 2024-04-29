@@ -1,0 +1,45 @@
+#popmsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 100vh;
+}
+.popupmsg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #639;
+    width: 25%;
+    height: 30vh;
+    background-image: linear-gradient(
+        73.33deg,
+        #000000 14.06%,
+        #513173 52.14%,
+        #4790b9 67.03%,
+        #0c0c0c 80.15%
+      );
+}
+.popupmsg p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 32px;
+    color: aliceblue;
+    margin-bottom: 1vh;
+}
+.popupmsg h3{
+    color: aliceblue;
+    margin-bottom: 2vh;
+
+}
+.popupmsg h1{
+    color: aliceblue;
+    margin-bottom: 2vh;
+
+}
