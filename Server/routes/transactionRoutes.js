@@ -1,5 +1,5 @@
 const express = require("express");
-const { createTransaction, getMyTransaction, getAllTransactions, completedPayment, adminVerifyPayment } = require("../controller/transactioncontroller");
+const { createTransaction, getMyTransaction, getAllTransactions, completedPayment, adminVerifyPayment, getMyPendingTransaction } = require("../controller/transactioncontroller");
 const { protect } = require("../middleWare/authMiddleWare");
 
 const router = express.Router();
@@ -7,7 +7,8 @@ const router = express.Router();
 router.route("/")
 .post(protect, createTransaction)
 .get(protect, getMyTransaction)
-router.get("/all",getAllTransactions)
+router.get("/all",protect, getAllTransactions)
+router.get("/pending",protect, getMyPendingTransaction)
 router.put("/completed", protect, completedPayment)
 router.get("/adminverify/:id/:code", adminVerifyPayment)
 // .put(completeTransction)

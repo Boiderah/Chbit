@@ -10,11 +10,12 @@ const createTransaction = async (req, res) => {
   console.log(req.user);
   const SellerId = req.user.id
   const SellerName = req.user.fullName
-
-  const pending = await Transaction.findOne({ SellerId: SellerId});
+  const transaction = await Transaction.find({ SellerId: SellerId});
+  const pending = transaction.filter((transaction) => transaction.status !== "completed")
+  
   console.log(pending);
 
-  if (pending) {
+  if (pending.length > 0) {
     res.status(401).send("Already have a pending transaction");
 } else {
     const newTransaction = await Transaction.create({
@@ -42,7 +43,7 @@ const getMyTransaction = async (req, res) => {
   
 
   const SellerId = req.user.id
-  const transaction = await Transaction.findOne({ SellerId: SellerId});
+  const transaction = await Transaction.find({ SellerId: SellerId});
   
   if (transaction) {
       return res.status(200).json(transaction);
@@ -50,10 +51,21 @@ const getMyTransaction = async (req, res) => {
         return res.status(200).send("You have no pending transacctions");
     }
 };
+const getMyPendingTransaction = async (req, res) => {
+  const SellerId = req.user.id
+  const transaction = await Transaction.find({ SellerId: SellerId});
+  const pending = transaction.filter((transaction) => transaction.status !== "completed")
+  if (pending.length > 0) {
+      return res.status(200).json(pending);
+    } else {
+        return res.status(400).send("You have no pending transacctions");
+    }
+};
 const getAllTransactions = async (req, res) => {
+    console.log("i got here");
     try {
-        const SellerId = req.user.id
-        const transactions = await Transaction.find({},{ SellerId: SellerId});
+        console.log("i got here");
+        const transactions = await Transaction.find();
         return res.status(200).json(transactions);
     } catch (error) {
         res.status(401).json(error);
@@ -101,5 +113,5 @@ const adminVerifyPayment = async (req, res) => {
     }
 };
 
-module.exports = { createTransaction, getMyTransaction, getAllTransactions, completedPayment, adminVerifyPayment};
+module.exports = { createTransaction, getMyTransaction, getAllTransactions, completedPayment, adminVerifyPayment, getMyPendingTransaction};
 

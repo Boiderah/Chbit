@@ -2,34 +2,34 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Signin.css";
 import { useState } from "react";
 import loginimg from "../../assets/Res/loginimg.png";
+import api from "../../utility/api";
 
 const Sigin = () => {
   const [email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const [token, setToken] = useState("");
+  const [errors, setErrors] = useState("");
+  const [Loading, setLoading] = useState(false);
   const Navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     console.log(email, Password);
-
-    fetch("http://localhost:4000/user/Login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
+    setLoading(true);
+    try {
+      const response = await api.post("user/Login", {
         email: email,
         password: Password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        localStorage.setItem("token", `${res}`);
-        Navigate("/");
-      })
-      .catch((err) => console.error(err));
+      });
+      console.log(response);
+      localStorage.setItem("token", response.data.token);
+      setLoading(false);
+      Navigate ('/buy')
+    } catch (error) {
+      console.log(error);
+      setErrors(error.response.data);
+      setLoading(false);
+    }
   };
 
   return (

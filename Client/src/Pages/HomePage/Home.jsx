@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Footer from "../../Component/Footer";
-import { useNavigate, Routes, Route } from "react-router-dom";
+import { useNavigate, Routes, Route, Link } from "react-router-dom";
 import btclogo2 from "../../assets/Res/btclogo2.png";
 import footer from "../../assets/Res/footer.png";
 import ethereum from "../../assets/Res/ethereum.png";
@@ -13,12 +13,12 @@ import { Pivot as Hamburger } from 'hamburger-react'
 
 const Home = () => {
   const Navigate = useNavigate();
-  // useEffect(() => {
-  //   const token = localStorage.getItem("token");
-  //   if (!token) {
-  //     Navigate("/signin");
-  //   }
-  // }, []);
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      Navigate("/signin");
+    }
+  }, []);
   const [trans, setTrans] = useState("buy")
   function gotobuy() {
     setTrans("buy")
@@ -50,8 +50,8 @@ const Home = () => {
           isOpen? (
             <div className="dropdown">
               <div className="dropdown-content">
-                <div className="dropdown-item" onClick={gotobuy}>Overview</div>
-                {/* <Link className="dropdown-item" onClick={gotobuy} to={"/*"} style={{ textDecoration: "none" }}>Overview</Link> */}
+                {/* <div className="dropdown-item" onClick={gotobuy}>Overview</div> */}
+                <Link className="dropdown-item" to={"/overview"} style={{ textDecoration: "none" }}>Overview</Link>
                 <div className="dropdown-item" onClick={gotosell}>Change Password</div>
                 <p onClick={logOut}>  Logout</p>
               </div>

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const transactionschema = mongoose.Schema({
   quantity: {
-    type: String,
+    type: Number,
     required: true,
   },
   coin: {
@@ -10,7 +10,7 @@ const transactionschema = mongoose.Schema({
     required: true,
   },
   rate: {
-    type: String,
+    type: Number,
     required: true,
   },
   phoneNumber: {
@@ -22,7 +22,7 @@ const transactionschema = mongoose.Schema({
     required: true,
   },
   AccountNumber: {
-    type: String,
+    type: Number,
     required: true,
   },
   AccountName: {

@@ -1,9 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Sell.css";
+import api, { apiConfig } from "../utility/api";
+import { Buycomponent } from "./Buy";
+import { Navigate, useNavigate } from "react-router-dom";
 const Sell = () => {
+  const [myTransactions, setMyTransactions] = useState([])
+  const [quantity, setQuantity] = useState(0)
+  const [coin, setCoin] = useState("")
+  const [rate, setRate] = useState(0)
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [bankName, setBankName] = useState("")
+  const [AccountNumber, setAccountNumber] = useState("")
+  const [AccountName, setAccountName] = useState("")
+  const Navigate = useNavigate()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await api.post("transaction", {
+        quantity, 
+        coin, 
+        rate, 
+        phoneNumber, 
+        bankName, 
+        AccountNumber, 
+        AccountName
+      }, apiConfig);
+      console.log(response);
+      Navigate('./buy')
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const getMyTransactions = async () => {
+    try {
+      const response = await api.get("transaction/pending", apiConfig);
+      console.log(response);
+      setMyTransactions(response.data);
+    } catch (error) {
+      console.log(error);
+    } 
+  };
+
+  useEffect(() => {
+    getMyTransactions()
+  },[])
   return (
     <div className="buycont">
-    <form className="buyform">
+    { myTransactions.length>0?<Buycomponent {...myTransactions[0]} page={'sell'}/>:
+
+      <form onSubmit={handleSubmit} className="buyform">
       <div className="flex">
 
         <label>
@@ -12,6 +59,8 @@ const Sell = () => {
           className="input" 
           type="text" 
           placeholder="coin" 
+          value={coin}
+          onChange={(e)=>setCoin(e.target.value)}
           required />
         </label>
 
@@ -21,8 +70,10 @@ const Sell = () => {
             className="input"
             type="text"
             placeholder="quantity"
+            value={quantity}
+            onChange={(e)=>setQuantity(e.target.value)}
             required
-          />
+            />
         </label>
       </div>
       <div className="flex">
@@ -32,6 +83,8 @@ const Sell = () => {
           className="input" 
           type="text" 
           placeholder="Rate" 
+          value={rate}
+          onChange={(e)=>setRate(e.target.value)}
           required />
         </label>
 
@@ -41,8 +94,10 @@ const Sell = () => {
             className="input"
             type="text"
             placeholder="phonenumber"
+            value={phoneNumber}
+            onChange={(e)=>setPhoneNumber(e.target.value)}
             required
-          />
+            />
         </label>
       </div>
 
@@ -52,8 +107,10 @@ const Sell = () => {
           className="input"
           type="text"
           placeholder="bankName"
+          value={bankName}
+          onChange={(e)=>setBankName(e.target.value)}
           required
-        />
+          />
       </label>
 
       <label>
@@ -62,8 +119,10 @@ const Sell = () => {
           className="input"
           type="text"
           placeholder="AccountNumber"
+          value={AccountNumber}
+          onChange={(e)=>setAccountNumber(e.target.value)}
           required
-        />
+          />
       </label>
 
       <label>
@@ -72,8 +131,10 @@ const Sell = () => {
           className="input"
           type="text"
           placeholder="AccountName"
+          value={AccountName}
+          onChange={(e)=>setAccountName(e.target.value)}
           required
-        />
+          />
       </label>
       <div>
         <hr />
@@ -81,25 +142,20 @@ const Sell = () => {
           <span>PAYMENT</span>
           <div className="details">
             <span>Subtotal:</span>
-            <span>$240.00</span>
+            <span>${rate && quantity && rate* quantity}</span>
             <span>Gas fee:</span>
-            <span>$0.5</span>
+            <span>${rate && quantity && rate* quantity*0.01}</span>
             <span>Total:</span>
-            <span>$10.00</span>
+            <span>${rate && quantity && (rate* quantity)+(rate*quantity*0.01)}</span>
           </div>
         </div>
       </div>
       
-      <label>
-        <span>PlaceOrder</span>
-        <input
-          className="input"
-          type="text"
-          placeholder="PlaceOrder"
-          required
-        />
-      </label>
+      <button type="submit">
+        PlaceOrder
+      </button>
     </form>
+}
   </div>
   );
   
