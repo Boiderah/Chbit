@@ -51,6 +51,7 @@ const Home = () => {
             <div className="dropdown">
               <div className="dropdown-content">
                 <div className="dropdown-item" onClick={gotobuy}>Overview</div>
+                {/* <Link className="dropdown-item" onClick={gotobuy} to={"/*"} style={{ textDecoration: "none" }}>Overview</Link> */}
                 <div className="dropdown-item" onClick={gotosell}>Change Password</div>
                 <p onClick={logOut}>  Logout</p>
               </div>
@@ -60,6 +61,7 @@ const Home = () => {
       </div>
       </div>
       </div>
+
       <div id="body">
       <div id="p2pdesignbox">
       <div className="p2pdesignbox1">
@@ -94,17 +96,6 @@ const Home = () => {
         </div>
       </div>
       </div>
-
-    {/* <div className="prod">
-    <div id="bandS">
-      <div className="bandsbtn">
-        <h1>Buy</h1>
-      </div>
-      <div className="bandsbtn">
-        <h1>Sell</h1>
-      </div>
-      </div>
-      </div> */}
 
   <div class="tab-container">
       <button onClick={gotobuy} className="tab tab--1">Buy</button>

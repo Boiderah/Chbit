@@ -1,0 +1,79 @@
+.overviebx{
+    /* display: flex; */
+    height: 100vh;
+}
+#navigatebak{
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #513173;
+    margin-left: 3rem; 
+    margin-bottom: 3rem;
+
+}
+.overviebx1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh 0vw;
+    width: 100%;
+    height: 80%;
+}
+#profdiv{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* border: 1px solid #333; */
+}
+#profdiv h1{
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30px;
+    /* text-align: center; */
+    color: #513173;
+}
+.overviebx2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#accdet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #333;
+}
+#accdet h3{
+    margin-left: 25px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #513173;
+}
+#nameemail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid #333; */
+    width: 100%;
+    height: 60%;
+}
+#nameemail h4{
+    margin-left: 2rem; 
+    margin-bottom: 1rem;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #513173;
+}
