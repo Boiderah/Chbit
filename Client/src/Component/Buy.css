@@ -65,6 +65,13 @@
 }
 #buyComponent .popup > div {
   background-color: black;
+  width: 27%;
+  padding: 1rem 0;
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
 }
 
 /* .buyform {

@@ -53,16 +53,21 @@ const Sell = () => {
       <form onSubmit={handleSubmit} className="buyform">
       <div className="flex">
 
-        <label>
-          <span>coin</span>
+        {/* <label> */}
+          <select className="input" id="inputss"  name="coin">
+          <option value="">Usdt</option>
+          <option value="Argentina">BTC</option>
+          <option value="Brazil">etheruem</option>
+         </select>
+          {/* <span>coin</span>
           <input 
           className="input" 
           type="text" 
           placeholder="coin" 
           value={coin}
           onChange={(e)=>setCoin(e.target.value)}
-          required />
-        </label>
+          required /> */}
+        {/* </label> */}
 
         <label>
           <span>quantity</span>
@@ -142,16 +147,16 @@ const Sell = () => {
           <span>PAYMENT</span>
           <div className="details">
             <span>Subtotal:</span>
-            <span>${rate && quantity && rate* quantity}</span>
+            <span> ₦{rate && quantity && rate* quantity}</span>
             <span>Gas fee:</span>
-            <span>${rate && quantity && rate* quantity*0.01}</span>
+            <span> ₦{rate && quantity && rate* quantity*0.01}</span>
             <span>Total:</span>
-            <span>${rate && quantity && (rate* quantity)+(rate*quantity*0.01)}</span>
+            <span> ₦{rate && quantity && (rate* quantity)+(rate*quantity*0.01)}</span>
           </div>
         </div>
       </div>
       
-      <button type="submit">
+      <button id="orderbtnn" type="submit">
         PlaceOrder
       </button>
     </form>

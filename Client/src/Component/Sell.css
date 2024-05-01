@@ -96,3 +96,23 @@
     color: #639;
     margin: auto 0 auto auto;
   }
+#orderbtnn{
+  display: flex;
+  padding:10px 20px;
+  align-items:center;
+  justify-content:center;
+  background-color:rgb(154, 119, 189);
+  color:white;
+}
+#inputss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  width: 50%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}

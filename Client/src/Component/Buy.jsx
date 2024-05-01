@@ -93,16 +93,14 @@ export const Buycomponent = ({SellerName, rate, quantity, AccountName, AccountNu
         {
           showPopup && 
           <div className="popup">
-            <div>
-
-            <p>
-              make payment to the wallet below before
-              your buy order will be approved. 
+            <div id="popupdiv ">
+             <p>
+            don't transact with a palmpay user as transactions <br /> can be deleted from the palmpay transaction <br /> history. 
             </p>
-            <h3>{AccountName}</h3>
-            <h3>{AccountNumber}</h3>
-            <h3>{bankName}</h3>
-            <h3>{phoneNumber}</h3>
+            <h3> Account Name :  {AccountName}</h3>
+            <h3>Account Number :  {AccountNumber}</h3>
+            <h3>bank Name :  {bankName}</h3>
+            <h3>phone Number :  {phoneNumber}</h3>
             <div className="buybtt">
             <button>I have paid</button>
           </div>
