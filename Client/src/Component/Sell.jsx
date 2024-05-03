@@ -51,14 +51,19 @@ const Sell = () => {
     { myTransactions.length>0?<Buycomponent {...myTransactions[0]} page={'sell'}/>:
 
       <form onSubmit={handleSubmit} className="buyform">
+          <p>make payment to the wallet address below before placing your order
+               else your buy order will not be approve.</p> 
+            <h3>hsxvjsyxgnasx7i6weycge7nhcw8xi</h3>
+            <hr />
       <div className="flex">
-
-        {/* <label> */}
+        <label>
+        <span>Coin</span>
           <select className="input" id="inputss"  name="coin">
           <option value="">Usdt</option>
           <option value="Argentina">BTC</option>
           <option value="Brazil">etheruem</option>
          </select>
+         </label>
           {/* <span>coin</span>
           <input 
           className="input" 
@@ -67,7 +72,6 @@ const Sell = () => {
           value={coin}
           onChange={(e)=>setCoin(e.target.value)}
           required /> */}
-        {/* </label> */}
 
         <label>
           <span>quantity</span>

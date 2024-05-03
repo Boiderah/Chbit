@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 6px;
+    /* gap: 6px; */
   }
   
   .buyform .form label {
@@ -110,9 +110,31 @@
   justify-content: center;
   background-color: #333;
   color: #fff;
-  width: 50%;
   padding: 20px 05px 05px 10px;
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
+  /* width: 50%; */
+  /* margin-top: 20px; */
+  /* position: absolute; */
+}
+.buyform p {
+  text-align: center;
+  color: #513173;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  /* margin-bottom: 3vh; */
+}
+.buyform h3 {
+  text-align: center;
+  color: #513173;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  /* margin-bottom: 3vh; */
 }
