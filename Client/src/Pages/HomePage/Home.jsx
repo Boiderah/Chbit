@@ -51,7 +51,7 @@ const Home = () => {
             <div className="dropdown">
               <div className="dropdown-content">
                 {/* <div className="dropdown-item" onClick={gotobuy}>Overview</div> */}
-                <Link className="dropdown-item" to={"/overview"} style={{ textDecoration: "none" }}>Overview</Link>
+                <Link className="dropdown-item" to={"/overview"} style={{ textDecoration: "none", color:"white" }}>Overview</Link>
                 <div className="dropdown-item" onClick={gotosell}>Change Password</div>
                 <p onClick={logOut}>  Logout</p>
               </div>

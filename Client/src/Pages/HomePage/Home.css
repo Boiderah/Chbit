@@ -81,7 +81,7 @@
 #homepage #body{
   position: relative;
   display: flex;
-  margin-top: 7%;
+  margin-top: 10%;
   flex-direction: column;
 
 }
