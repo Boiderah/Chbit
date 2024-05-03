@@ -78,7 +78,7 @@ const Home = () => {
 
         <div className="p2pdesignbox2">
           <h1> P2P Trading </h1>
-          <h1>Safe - Fast - Diverse</h1>
+          <h1>Safe-Fast-Diverse</h1>
         </div>
         <div className="p2pdesignim1">
         <div className="ppplog">

@@ -9,8 +9,6 @@
   align-items: center;
   justify-content: center;
   /* margin-bottom: 4vh;  */
-
-
 }
 #homepage .navbar002 {
   display: flex;
@@ -19,11 +17,11 @@
   width: 80%;
   /* height: 100vh; */
 }
- #homepage .head1conti{
+#homepage .head1conti {
   color: #639;
   display: flex;
   width: 15%;
-  /* flex-direction: column; */
+  flex-direction: column;
   letter-spacing: 0;
   font-weight: 600;
   right: 0%;
@@ -31,8 +29,8 @@
   font-size: 1.5rem;
   font-family: Roboto, sans-serif;
   position: absolute;
-} 
-#homepage .dropdown{
+}
+#homepage .dropdown {
   display: flex;
   background-image: linear-gradient(
     73.33deg,
@@ -42,7 +40,7 @@
     #0c0c0c 80.15%
   );
   width: 100%;
-  height:100% ;
+  height: 100%;
   color: white;
   margin-top: 3%;
   font-size: 20px;
@@ -52,14 +50,14 @@
   gap: 3vh;
   align-items: center;
 }
-#homepage .dropdown-content{
+#homepage .dropdown-content {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   align-content: space-between;
-  gap: 5vh;
+  gap: 3vh;
 }
 #homepage .head2cont {
   color: #639;
@@ -76,14 +74,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-#homepage #body{
+#homepage #body {
   position: relative;
   display: flex;
   margin-top: 10%;
   flex-direction: column;
-
 }
 
 #homepage #p2pdesignbox {
@@ -125,7 +121,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 35px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   color: #fffdfd;
 }
 
@@ -241,7 +237,7 @@
   flex-grow: 1;
   cursor: pointer;
   font-weight: 500;
-  color:#639;
+  color: #639;
   font-size: 20px;
   font-weight: 400px;
 }
