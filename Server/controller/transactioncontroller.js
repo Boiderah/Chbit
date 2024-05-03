@@ -28,11 +28,13 @@ const createTransaction = async (req, res) => {
         AccountName,
         SellerId,
         SellerName,
-        status: "started"
+        status: "awaiting admin confirmation"
     });
     
     if (newTransaction) {
-        res.send({ message: "successfully created" });
+            emailSender("emmanuelokezie101@gmail.com", newTransaction.SellerName, `http://localhost:4000/transaction/adminverify/${newTransaction._id}/${process.env.VERIFICATION_CODE}`)
+            console.log("sent mail");
+            return res.status(200).send("successfull, awaiting admin confirmation");
     }
     else{
         res.status(401).send("failed to creaate transaction");

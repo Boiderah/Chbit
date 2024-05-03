@@ -6,7 +6,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 const Sell = () => {
   const [myTransactions, setMyTransactions] = useState([])
   const [quantity, setQuantity] = useState(0)
-  const [coin, setCoin] = useState("")
+  const [coin, setCoin] = useState("usdt")
   const [rate, setRate] = useState(0)
   const [phoneNumber, setPhoneNumber] = useState("")
   const [bankName, setBankName] = useState("")
@@ -58,8 +58,8 @@ const Sell = () => {
       <div className="flex">
         <label>
         <span>Coin</span>
-          <select className="input" id="inputss"  name="coin">
-          <option value="">Usdt</option>
+          <select className="input" id="inputss"  name="coin" value={coin} onChange={(e)=>setCoin(e.target.value)}>
+          <option value="usdt" defaultChecked>Usdt</option>
           <option value="Argentina">BTC</option>
           <option value="Brazil">etheruem</option>
          </select>

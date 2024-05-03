@@ -23,7 +23,7 @@ const Buy = () => {
       
     {
       transactions && 
-      transactions.map((transaction) => (
+      transactions.filter((trans)=> trans.status==="approved" ).map((transaction) => (
         <Buycomponent {...transaction}/>
       ))
     }
